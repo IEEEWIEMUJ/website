@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@100&family=Signika+Negative:wght@400;700&family=Source+Code+Pro:wght@200&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f2f3f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* navigation bar css starts */
+
+.navigation-bar{
+  background-color: #451f55;
+  z-index: 1000;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.navigation-bar .branch-name{
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.navigation-bar .navbar ul{
+  list-style: none;
+}
+
+.navigation-bar .navbar ul li{
+  position: relative;
+  float: left;
+}
+
+.navigation-bar .navbar ul li a{
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 20px;
+  color:white;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover{
+  text-decoration: underline;
+  background-color: inherit;
+}
+
+/* check box */
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+/* navigation bar css ends */
+
+
+.container{
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.container .card{
+  position: relative;
+  width: 300px;
+  height:420px;
+  background: #fff;
+  margin: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover{
+  transform: scale(1.1);
+}
+.container .card .circle{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path:circle(180px at center 0);
+  text-align: center;
+}
+
+.container .card .circle h2{
+  color: #fff;
+  font-size: 2em;
+  padding: 40px 0;
+  font-weight: 600;
+}
+
+.container .card .content{
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  padding: 15px;
+}
+
+.container .card .content p{
+  color: #666;
+}
+
+.container .card .content a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color:#fff;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a{
+  background:  #CDB4DB;
+}
+
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a{
+  background:  #451f55;
+}
+
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a{
+  background:   #CDB4DB;
+}
+
+.container .card:nth-child(4) .circle,
+.container .card:nth-child(4) .content a{
+  background: #451f55;
+}
+
+.container .card:nth-child(5) .circle,
+.container .card:nth-child(5) .content a{
+  background: #CDB4DB;
+}
+
+.container .card:nth-child(6) .circle,
+.container .card:nth-child(6) .content a{
+  background: #451f55;
+}
+
+.container .card:nth-child(7) .circle,
+.container .card:nth-child(7) .content a{
+  background: #CDB4DB;
+}
+
+.container .card:nth-child(8) .circle,
+.container .card:nth-child(8) .content a{
+  background:  #451f55;
+}
+
+.container .card:nth-child(9) .circle,
+.container .card:nth-child(9) .content a{
+  background:  #CDB4DB;
+}
+
+/* footer css starts */
+
+.footer-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer{
+  background-color:  #451f55;
+  padding: 70px 0;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color:#fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom:-10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li{
+  color: #bbb;
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color:white;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+
+.footer-col ul li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  font-size: 20px;
+  height: 40px;
+  width:40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #fff;
+}
+
+.footer-col .social-links .address{
+  color:#bbb;
+  margin-top: 20px;
+  margin-left: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+}
+
+/* footer css ends */
+
+
+
+@media (max-width:1000px) {
+  /* navigation bar css starts */
+  .navigation-bar .branch-name{
+      display: block;
+    }
+
+    .checkbtn{
+      display: block;
+    }
+
+    nav ul{
+      position: fixed;
+      width: 100%;
+      height:40%;
+      background: #451f55;
+      top:80px;
+      left:-100%;
+      text-align: center;
+      transition: all .5s;
+      overflow-y: scroll;
+    }
+
+    nav ul li{
+      width: 100%;
+      display: block;
+      margin: 20px 0;
+      line-height: 15px;
+    }
+
+    nav ul li a{
+      font-size:16px;
+    }
+
+    .navbar a:hover{
+      background: none;
+      color: #ceb8d9;
+    }
+
+    #check:checked ~ .nav-items{
+      left:0%;
+    }
+    /* navigation bar css ends */
+
+    .footer-col{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+}
