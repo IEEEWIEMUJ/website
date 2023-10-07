@@ -3,11 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | IEEE WIE</title>
+    <title>Events | IEEE WIE</title>
     <link rel="shortcut icon" href="https://brand-experience.ieee.org/wp-content/uploads/2019/01/WIE_purple_pms526.png" type="image/x-icon">
-    <link rel="stylesheet" href="frontpage.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="events_section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script>
+      function flip(event){
+      	var element = event.currentTarget;
+      	if (element.className === "main-container") {
+          if(element.style.transform == "rotateY(180deg)") {
+            element.style.transform = "rotateY(0deg)";
+          }
+          else {
+            element.style.transform = "rotateY(180deg)";
+          }
+        }
+      };
+    </script>
   </head>
   <body>
 
@@ -25,167 +37,977 @@
         </ul>
       </nav>
     </header>
-    <!-- navigation bar ends -->
+  <!-- navigation bar ends -->
 
+    <div class="events-container">
 
-    <!-- animation area starts-->
-    <section class="top-area skew">
-      <div class="container">
-        <div class="wrapper">
-          <div class="static-text">I'm a</div>
-          <ul class="dynamic-texts">
-            <li><span>Woman</span></li>
-            <li><span>Coder</span></li>
-            <li><span>Developer</span></li>
-            <li><span>Programmer</span></li>
+      
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/ballistic_3.0.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Ballistic 3.0</span>
+              <span class="tag">Genesis 3.0</span>
+            </div>
           </div>
-          <div class="inner-container">
-            <p>Unleash the many that you are with IEEE WIE MUJ.</p>
-          </div>
-          <div class="join-us">
-            <button class="join-us-button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeFfR859Eibnbq7xZQymeT9xoIp1Xr700xVzbmJb1YZYK1PSQ/viewform" target="_blank">JOIN US</a></button>
-        </div>
-      </div>
-    </section>
-    <!-- animation area ends-->
-
-
-    <!-- introduction to IEEE WIE starts -->
-    <section class="Introduction">
-      <div class="heading" data-aos="fade-up" data-aos-duration="2000"  data-aos-once="true"> IEEE - Women in Engineering </div>
-        <div class="subheading" data-aos="fade-up" data-aos-duration="2000"  data-aos-once="true">Advancing Technology for Humanity</div>
-        <div class="intro" data-aos="fade-up" data-aos-duration="2000"  data-aos-once="true">
-          <h2>ABOUT WIE</h2>
-          <p class="para">IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science.
-          IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
-          <h2>IEEE'S VISION</h2>
-          <p class="para">IEEE WIE'S goal is to facilitate the recruitment and retention of women in technical disciplines globally. We envision a vibrant community of IEEE women and men collectively using their diverse talents to innovate for the benefit of humanity.</p>
-          <h2>IEEE WIE MUJ</h2>
-          <p class="para">IEEE WIE MUJ seeks to empower girls in our college
-                          who are interested in technical fields and to assist
-                          them in becoming competent by learning from other
-                          outstanding women engineers and gaining the
-                          confidence to lead on real-world projects.</p>
-        </div>
-    </section>
-    <!-- introduction to IEEE WIE ends -->
-
-    <!-- blog section starts -->
-    <section class="blog" data-aos="fade-up" data-aos-duration="2000"  data-aos-once="true">
-      <div class="blog-heading">
-        <h3>BLOGS</h3>
-        <span>Stay Updated on the Latest in Tech</span>
-      </div>
-      <!-- blog container -->
-      <div class="blog-container">
-        <!-- box-1 -->
-        <div class="blog-box">
-          <!-- image -->
-          <div class="blog-img">
-            <img src="img/seo.png" alt="">
-          </div>
-          <!-- text -->
-          <div class="blog-text">
-            <span>Pankhuri</span>
-            <span class="blog-title">All About Search Engine Optimization</span>
-            <a href="https://medium.com/@ieee.wiemuj/all-about-search-engines-25d73bb4eebb" target="_blank">Read More</a>
-          </div>
-        </div>
-
-        <!-- box-2 -->
-        <div class="blog-box">
-          <!-- image -->
-          <div class="blog-img">
-            <img src="img/iot.png" alt="">
-          </div>
-          <!-- text -->
-          <div class="blog-text">
-            <span>Tisha Sharma</span>
-            <span class="blog-title">ML, IoT and Waste Management in India</span>
-            <a href="https://medium.com/ieee-wie-muj/how-ml-and-iot-can-revolutionize-waste-management-in-india-99a1dd0f64c6" target="_blank">Read More</a>
-          </div>
-        </div>
-
-        <!-- box-3 -->
-        <div class="blog-box">
-          <!-- image -->
-          <div class="blog-img">
-            <img src="img/ml.png" alt="">
-          </div>
-          <!-- text -->
-          <div class="blog-text">
-            <span>Chhavi Deshlahra</span>
-            <span class="blog-title">Is Machine Learning Magic?</span>
-            <a href="https://medium.com/ieee-wie-muj/is-machine-learning-magic-b9283f8bbfbe" target="_blank">Read More</a>
-          </div>
-        </div>
-
-      </div>
-      <a href="https://medium.com/@ieee.wiemuj" class="more-blogs" target="_blank">READ MORE BLOGS</a>
-    </section>
-    <!-- blog section ends -->
-
-    <!-- resources section starts -->
-    <section class="resources" data-aos="fade-up" data-aos-duration="2000"  data-aos-once="true">
-      <div class="resources-container">
-        <div class="supporting-text">
-          <h3>Get Coding</h3>
-          <p>Looking to get started in the world of tech? IEEE MUJ WIE brings to you the right programming tools for beginners. From web development to competitive coding, we have it all! Start your coding journey today by checking out these amazing resources curated by the members for IEEE just for you!</p>
-          <button class="more-resources"><a href="resources.html">DISCOVER RESOURCES</a></button>
-        </div>
-        <div class="images">
-          <img src="img/languages.png" alt="">
-          </div>
-        </div>
-    </section>
-    <!-- resources section ends -->
-
-    <!-- events section starts -->
-    <section class="events" data-aos="fade-up" data-aos-duration="2000"  data-aos-once="true">
-      <div class="events-heading">
-        <h3>EVENTS</h3>
-        <span>Find what we've been upto</span>
-      </div>
-      <div class="events-container">
-        <!-- box-1 -->
-        <div class="events-box">
-          <!-- image -->
-          <div class="events-img">
-            <img src="img/java_oops.jpg" alt="">
-          </div>
-          <!-- text -->
-          <div class="events-text">
-            <span class="events-title">Basics of Java</span>
-          </div>
-        </div>
-
-        <!-- box-2 -->
-        <div class="events-box">
-          <!-- image -->
-          <div class="events-img">
-            <img src="img/competitive_programming.jpeg" alt="">
-          </div>
-          <!-- text -->
-          <div class="events-text">
-            <span class="events-title">Competitive Programming</span>
-          </div>
-        </div>
-
-        <!-- box-3 -->
-        <div class="events-box">
-          <!-- image -->
-          <div class="events-img">
-            <img src="img/road_to_success.jpg" alt="">
-          </div>
-          <!-- text -->
-          <div class="events-text">
-            <span class="events-title">Road to Success</span>
+          <div class="theback">
+            <p> IEEE MUJ conducted its flagship techfest from 22nd to 25th September 23. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities..The players engaged in battles of FIFA and Mortal Kombat and many popular retro games like Contra and Road Rash</p>
           </div>
         </div>
       </div>
-      <a href="events.html" class="more-events">SEE MORE EVENTS</a>
-    </section>
-    <!-- events section ends -->
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/networkwithwie2.0.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Network with WIE 2.0</span>
+              <span class="tag">Genesis 3.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 22nd to 25th September 23. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. An all-women event, the attendees got to interact with their peers and seniors overnight. The seniors spoke about their internship experiences at firms like Google, Microsoft, NXP, etc. Several ice-breaking sessions were also conducted to help attendees get to know each other better.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/techsummit01.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Tech Summit</span>
+              <span class="tag">Genesis 3.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 22nd to 25th September 23. All three
+societies came together to organize a plethora of tech and semi-tech events, challenging
+the participants’ wits and problem-solving abilities. "Learn from and ask questions to the best of the tech industry" -A panel full of experienced veterans such as Paritosh Anand, Sandeep Jain, Tejas Patil and Aditi Gupta spoke about their entrepreneurial journeys and gave out indispensable guidance to the audience.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/breacout4.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Breacout 4.0</span>
+              <span class="tag">Genesis 3.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 22nd to 25th September 23. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. Top 30 teams engaged in a MARVELous treasure hunt sprawling the entire campus and scavenged for the precious infinity stones in a day-long event.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/lca3.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Lights Camera Auction</span>
+              <span class="tag">Genesis 3.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 22nd to 25th September 23. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. "Be thrifty in your bidding and hustle while selling" -The participants used their entrepreneur intellect and bade for their favorite products, prepared their pitches and flipped them for a profit!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/codeiton2.0.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">CODE-IT-ON 2.0</span>
+              <span class="tag">Genesis 3.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 22nd to 25th September 23. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. The participants competed to solve a set of 4 programming questions in a time limit of 2 hours.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/digitalgraffiti.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Digital Graffiti</span>
+              <span class="tag">Genesis 3.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 22nd to 25th September 23. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. “Be the proverbial artist everyone dreams to be"-The participants made the design of their wildest imagination based on a surprise theme which was given on the day of the event.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/csscombat.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">CSS Combat</span>
+              <span class="tag">Genesis 3.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 22nd to 25th September 23. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. "It is in the CSS where the magic of a website resides" -The participants had to prove their design acumen in this 3 part online event with a massive prize pool of 20,000 Rs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/08a6a41d-b9e2-40e3-9ece-c01863dd3e91_WhatsApp+Image+2023-08-27+at+3.21.35+PM.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">College Starter Pack</span>
+            </div>
+          </div>
+          <div class="theback">
+          <p>In our webinar, "College guide for freshers" , our guest speaker, Varun Kohli, the CEO of Coding Blocks shared insider tips on effective study habits, time management strategies, and how to strike a healthy balance between your academic and social life.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/c4c87463-57b0-484b-a01f-d3eb46b29f47_Techflix.jpg.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">TECH FLIX</span>
+            </div>
+          </div>
+          <div class="theback">
+          <p>Tech Flix was an event that allowed participants to explore the fascinating realm where technology and movies intertwine, and fuel their passion for learning and entertainment. We were elated to witness the outstanding knowledge and quick thinking displayed by all the participants. Their enthusiasm and passion for technology and movies were truly commendable!</p>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/b35b1584-b7d1-40c3-885e-96c4fe9be705_Cosmic+canvas.jpg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Cosmic Canvas</span>
+            </div>
+          </div>
+          <div class="theback">
+          <p>Cosmic Canvas featured a captivating poster-making competition centred around the theme of a sci-fi movie. Participants were encouraged to unleash their creativity and explore sub-themes like space, time, robots, artificial intelligence, aliens, and alternate reality.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/f29de7d6-cb84-463a-97ed-847bc78d87d0_Hands+in+Hustle.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Hands On Hustle</span>
+            </div>
+          </div>
+          <div class="theback">
+          <p>Participants had the opportunity to explore the exciting realm of creating a personal tutoring bot for placements. The main focus of the session was on developing an LLM-powered chatbot, providing attendees with valuable insights and practical skills, all at no cost.</p>
+          </div>
+        </div>
+      </div>
+      
+       <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/8584cb79-87f5-4aa0-93e6-bc4ff77e176c_BITBLITZ.jpg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">BitBlitz</span>
+            </div>
+          </div>
+          <div class="theback">
+          <p>In this contest, the coders compete while also improving their overall algorithmic knowledge. The coding contest helps students and professionals to tackle a problem by reading the concepts one doesn't know, and also gain practical experience by coding the solution to the problem, thus improving their skills significantly. This coding competition packs the excitement of programming with the fun of learning into one compelling challenge.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/9db846a7-cf35-4659-a81a-e4fc4ea0cdff_The_Next_Dimension.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">The Next Dimension</span>
+            </div>
+          </div>
+          <div class="theback">
+          <p>The speaker- Mr. Prakarsh Pathak spoke about the future of web technology.
+            He explained about decentralised autonomy used in Web 3.0 and various other technical aspects involved.
+          He also shed light on blockchain, NFTs and cryptocurrency mining. The speaker also spoke about DeFi and tokens.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/d278b148-2f57-4997-a58d-a52ad7c8a31e_The_Fast_Switch.png?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">The Fast Switch</span>
+            </div>
+          </div>
+          <div class="theback">
+          <p>The Fast Switch was a coding relay competition. What makes code relay unique is that instead
+of writing a whole bug fix, you make incremental progress and then pass it along to the next
+contributor.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/cd1469b6-12dc-4335-9ffb-1e64da3df343_HackHer.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Hack{Her}</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>Hack(her) was a women centric hackathon which would help the participants code
+under pressure and give them an exposure of solving problems based on real life
+scenarios.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/6f3f2ffe-4312-4d3f-943a-95928dd90c45_ready_set_vfx_2.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Ready, Set, VFX 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The event was conducted to bring together creativity and technology to inspire the students to imagine and create the impossible. The agenda was to familiarize the audience with VFX software such as Blender.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/74680977-0e6f-44ce-a07b-14a24efe940d_CSSCombat.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">CSS Combat</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>CSS Combat was a code-golfing event wherein teams had to recreate the given target using CSS codes only, in a stipulated time period. It was the perfect opportunity for participants to brush up their CSS skills!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/50b76a26-eeff-48ba-8a4e-e2bd2208a388_Social_Connect.png?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Social Connect</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>A total of 2 professors & 3 club members volunteered for the
+drive, where they met the students at the school & enbibed a sense of
+learning in them, by means of demonstrations, explanations, games, and lots
+of fun-filled activities</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/55778c8f-6897-4c30-baff-f18071ec2479_TechSummit.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Tech Summit</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. A venerable panel of tech stalwarts like Mr. Arsh Goyal, Mr. Nivedan Rathi, Mr. Vinod Kumar and Ms. Priyanka Kasture spoke about their journey in tech, their upcoming ventures, their past work and experiences in tech and their bullish views on the future of tech. The audience had an incredible time interacting with the panelists and gained insights on a wide-range of tech-related topics!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/217b5b6c-6aad-4bd0-8ea2-9720d8af1989_NetworkingNight.png?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Network with WIE</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. This all-nighter event was the perfect opportunity for the female developer community at MUJ to interact with each other, get valuable insights on internships by seniors and break the ice with fellow batchmates!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/1fd2bec7-725a-4da5-8abd-91fd2038876e_TechTalk.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Tech Talk</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three
+societies came together to organize a plethora of tech and semi-tech events, challenging
+the participants’ wits and problem-solving abilities. An offline event, the speaker gave
+the audience a glimpse into Data Science and its various algorithms and applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/bddb9a68-8533-4b32-ab61-dc202217a171_ErrorTerror.png?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Error Terror</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. An online event, the contestants got a chance to exercise their coding skills and debug the given snippets of code based on the desired outputs. The participants also had to fill in missing pieces of code to emerge as the final winners!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/0abb6ade-bb13-4244-b557-7c82611e66e8_CodeItOn.png?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Code It On</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. An overnight coding sprint to put the participants’ programming knowledge at test, the event accosted the coders with multiple problem statements of varying difficulty. They had to run the provided test cases against their codes. The event offered interactive sessions with mentors and tons of knowledge to take away!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/2a02cb84-b674-49fb-ac04-de7c86859b8c_Breacout.png?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Breacout 3.0</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. The first offline segment of Breacout, teams got to brainstorm to hunt F.R.I.E.N.D.S + Brooklyn Nine-Nine using a series of clues. The treasure hunt was conducted in two rounds, the first being a quiz based on the selected show and the second being the ultimate hunt spanning the entire MUJ campus!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/85920712-3aa7-4818-83bc-18259a0c4143_BlogVerse.png?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Blogverse</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. A battle of the minds and pens, teams worked against the clock to thoroughly research their topics, devise a technical paper and write the ultimate blog! Selected teams also got a chance to create technical presentations and winners received internship opportunities from GeeksforGeeks and Content-Whale!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/CloneTheApp.png" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Clone the App</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. Ever wondered what goes behind making your favorite daily go-to apps? Clone-the-app sought to provide a similar experience to the participants. The teams were given applications which had to be cloned with maximum functionalities and top-notch UIs. They were allowed to use their preferred tech stacks to build the apps and establish victory!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/Ballistic2.png" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Ballistic 2.0</span>
+              <span class="tag">Genesis 2.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE MUJ conducted its flagship techfest from 7th to 9th October 22. All three societies came together to organize a plethora of tech and semi-tech events, challenging the participants’ wits and problem-solving abilities. A two-day gaming competition to test the gaming prowess, the event had participants   face-off each other in two games- Fifa’21 and Mortal Kombat. The winning teams took away exciting goodies and cash prizes! </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/git.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Intro to Git, GitHub and Open-Source</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>Ms. Khushi Trivedi- an MSLA from LNCTS Bhopal, prepared the audience for Hacktoberfest by explaining them various Git commands, and the difference between Git and GitHub. She also spoke about open-source and its power, and demonstrated the various concepts using a sample repository so as to give the audience a hands-on experience. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/dsa.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Roadmap to DSA</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The keynote speaker was Mr. Varun Kohli, the CEO of Coding Blocks. The event was an Introduction to DSA and its importance in the life of a software engineer. A roadmap was given to the audience to improve their DSA skills. A small trivia was also conducted wherein the top 10 winners won goodies from Coding Blocks. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/power_hour_1.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Power Hour 1.0: Mrs. Deepa Sayal</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>This event was a Q&A session with Mrs. Deepa Sayal- founder of TechSuperGirl and IWiLIndia. Mrs. Sayal narrated her journey and challenges as an entrepreneurs and encouraged open conversations. The attendees enjoyed this insightful session. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/kotlin.jpeg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Fundamentals of Kotlin and Android Components</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The speaker Mr. Sagar Patel gave a hands-on experience to the audience in Android Development. He walked the audience through the Kotlin Syntax and Android components such as Views, Fragments and Activities.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/quizscape.png" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Quizscape</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>This event was a three-level sci-tech based puzzle. The first round involved image based identification questions. The second round was a rebus round where participants had to decipher a word based on the clue given in the image. The finale round was a 24-clue based crossword conducted online. </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/masters.png" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">The Road from Bachelors to Masters</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The panel gave tips to the audience members on a plethora of topics relating to masters programs in CS. Some of the topics that the speakers shed light on were- shortlisting universities to apply to, planning finances, getting Letters of Recommendations (LORs), building a strong portfolio and writing a convincing Statement of Purpose (SOP). The audience keenly interacted with the speakers and raised various interesting queries.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/wit_eshita.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">HerStory: Ms. Eshita Kapoor</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The speaker inspired MUJ's aspiring students and gave them indispensable advice on handling challenges and break barriers as women in tech.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/wit_anagha.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">HerStory: Ms. Anagha Sivadas</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The speaker inspired MUJ's aspiring students and gave them indispensable advice on handling challenges and break barriers as women in tech.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/wit_ananya.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">HerStory: Ms. Ananya Smirti</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The speaker inspired MUJ's aspiring students and gave them indispensable advice on handling challenges and break barriers as women in tech.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/wit_nitya.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">HerStory: Ms. Nitya Jagadam</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The speaker inspired MUJ's aspiring students and gave them indispensable advice on handling challenges and break barriers as women in tech.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/breacout.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Breacout</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>This one-of-a-kind event was conducted by IEEE WIE MUJ to give the students a chance at practicing coding while playing. The participants were to use their wits and coding skills to cross each level and proceed further on the scoreboard. As the participant progressed through each floor, the difficulty as well as thrill increased. If the participants were unable to finish a particular floor in the given time they were eliminated.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/open_source.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Learn &lt;Open Source&gt;</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>This webinar was focused on the essentials of Open Source. It also covered topics like Gsoc and MLH. The guest speaker was Mr Harsh Bardhan Mishra.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/ready_set_vfx.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Ready, Set, VFX</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The event was an educational workshop regarding the field of VFX in collaboration with IEEE WIE. The event educated the participants about 3D art, software to use, mistakes to avoid and tips and tricks to improve one's 3D art. The workshop was led by Harsh Maheshwari.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/financial_planning.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Financial Planning for Young Professionals</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The event was organised by IEEE WIE MUJ in collaboration with Hermoneytalks to teach students about financial planning and money saving techniques.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/java_oops.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Basics of Java</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The workshop was conducted by Shubham Rawat, an ex-mentor at Coding Blocks and Google Code-In.  After discussing the basic syntax of the Java programming language, and variables and data types, the mentor proceeded to touch some more advanced topics such as Collections, ArrayList and Vectors. The workshop was a successful one with over 75 attendees, who were given a chance to start Java from scratch and build a strong foundation.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/7419b0f3-2a7f-481b-be26-0aa3f5c22495_competitive_programming.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Roadmap to Competitive Programming</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE WIE MUJ, in collaboration with GirlScript Jaipur conducted a webinar on “Roadmap to Competitive Programming” on 24th January 2021. Kashish Gupta, an Incoming Summer Analyst at Goldman Sachs, and 4-star coder on CodeChef shared her journey of competitive programming, and some useful tips on cracking interviews and participating in online challenges.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="img/d2d.jpg" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">D2: DESIGN DISRUPT</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The speaker was Ms. Khyati Sehkar, a digital artist and designer, currently pursuing her graduation from NIFT. The participants worked on the given problem statement over the span of 24 hours to complete for the top positions in the competition.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/e4773909-ca31-4190-a230-bc9cdd242e27_road_to_success.jpg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Road to Sucess: From MUJ to Walmart</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The speaker of the session was Ms. Nikita Sarkar who is an alumnus of Manipal University Jaipur. She got placed in the world recognized company-Walmart as a technical
+            project manager. She explained and recounted her UX design
+            journey to the audience who appreciated the knowledge she imparted.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/ee3fa1e5-4f49-4e3f-adc3-2149dac393fe_data+science+workshop.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Data Science: Face Detection</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The workshop started off with introduction to basics of Python and its application in Data Science and Machine Learning. It proceeded with explanation of advanced python libraries like NumPy and Matplotlib, after which a model for Face Detection was rendered and tested.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/0186b170-d21c-4e39-94f0-0465fc8bf64c_Digital+Marketing.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Digital Marketing</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>In the webinar our mentor covered the topics like introduction to SEO and Content Marketing in the digital world, how to drive leads and maximize revenues, the DOs and DON’Ts about Online-businesses and how to use Social Media at your disposal. His knowledge on current digital marketing scenarios taught a lot to the attendees and there were a lot of interesting questions by the viewers.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/05e9db6b-fc3c-4541-8ed1-e279e96582f8_Financial+Stability.JPG?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Financial Stability</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>The workshop began with a discussion on how COVID-19 has affected our lives, and the Indian Economy . It proceeded with a detailed discussion on what finance really means, and how and where to wisely invest with due respect to current economic conditions. This was followed by a Q&A, where students clarified their doubts.
+              The mentor was brilliant in the subject and in answering all the doubts, and also educated the students briefly about investments in gold, stock market and real estate . </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/84700d31-87ba-4d07-bd04-dbae3d3cf3bb_Interactive+session.jpg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Interactive Session and Q&A</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>In the webinar our mentor covered the topics like admission criteria ,application process abroad, Profile building and  also roadmap about pursuing bachelors abroad . Our mentor also briefed us about how aptitudes set forward an individual regardless of scores through examples from her own life. Aside from this our mentor also depicted her experience writing books. There were a lot of interesting questions by the attendees.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/8741a637-f696-4834-b782-7436885f81ab_Leadhership.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">LEAD'HER'SHIP</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>In this webinar Ms. Vaishali Wagle shares her personal experiences and battles and all the handwork it takes to reach here. She told her greatest fears and how she manages to overcome it. She motivated everyone and there were also a lot of interesting questions asked by the attendees.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/f1f03839-3ae6-4068-a8df-344dba171f1d_progate.jpeg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">40 Hours of Web Dev</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE Women in Engineering Society of Manipal University Jaipur in collaboration with Progate organised a  Progate’s 40 hours of HTML/CSS  from 31st October to 1st November. The event aims to help our participants begin their web development journey. The participants were asked to complete the study1 of HTML/CSS to receive access for further study.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/7806ee42-c23d-4a96-a0c4-830140329d0f_Writing+Event.jpg?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Writer's Unblock</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>  As a part of our Contest, we asked students to write an article on any one of the topics with a minimum word limit of 200 words-
+              <br>1. Feminism and Pseudo Feminism
+              <br>2. Indian Education System, College life and Covid-19
+              <br>3. Economical crisis Management
+              <br>The winning entries were published on IEEE MUJ WIE's Medium blog.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/6b6a19ab-875f-47e3-b043-ef09c5b90cbc_Machine+Learning.JPG?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Machine Learning</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE WIE MUJ collaborated with Coding Ninjas to host an online webinar on the topic - Machine Learning on 7th August from 8pm to 9pm. The interview was hosted by Ankur Goyel.
+              The webinar started off by them talking about their journey as data scientists, and elaborating on the vastness of the field. They educated the students about some interesting aspects of AI and ML along with its applications. This was followed by an interactive session with the participants, where all their queries were clarified.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/ec657a8a-76ff-4b0d-96d4-4fcfd5ef5252_Cryptocurrency.JPG?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">Cryptocurrency and Blockchain</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>In the webinar our mentor covered the topics like Cryptocurrency and the role of Blockchain. His passion and grasp in the field of cryptocurrency and blockchain filled the attendees with a new zest toward the topic and a lot of insightful questions were put up.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://images.prismic.io/ieeemuj/2132c61e-3ecf-4422-93b9-e620a03b569a_Robotech.JPG?auto=compress,format" alt="">
+            </div>
+            <div class="event">
+              <span class="events-title">ROBOTECHS</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>In the webinar our mentor covered the topics like introduction to Robotics and its use in reality and in virtual medium, especially during the COVID-19 pandemic. This interactive webinar combined interesting talks on Robotics, Technical Input and Practical, Hands on Experience. The participants were also taught about Robotic Process Automation- how it is a technology to execute a business by integrating human actions into a robot. It also comprised the basics of using Virtual Robotics Toolkit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer starts -->
     <footer class="footer">
@@ -208,7 +1030,7 @@
             <h4>Contact Us</h4>
             <ul>
               <li>
-                +91 91110 08100<br>
+              +91 91110 08100<br>
                 <span class="name">Sonakshi Arora</span>
               </li>
               <li>
@@ -231,11 +1053,5 @@
     </footer>
     <!-- footer ends -->
 
-    <!-- for animation-on-scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-      once:true;
-    </script>
   </body>
 </html>
