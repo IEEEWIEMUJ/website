@@ -11,16 +11,21 @@
 
     <script>
       function flip(event){
-      	var element = event.currentTarget;
-      	if (element.className === "main-container") {
-          if(element.style.transform == "rotateY(180deg)") {
-            element.style.transform = "rotateY(0deg)";
+        var element = event.currentTarget;
+        var openCards = document.querySelectorAll('.main-container[style*="rotateY(180deg)"]');
+        
+        openCards.forEach(function(card) {
+          if (card !== element) {
+            card.style.transform = "rotateY(0deg)";
           }
-          else {
-            element.style.transform = "rotateY(180deg)";
-          }
+        });
+
+        if (element.style.transform == "rotateY(180deg)") {
+          element.style.transform = "rotateY(0deg)";
+        } else {
+          element.style.transform = "rotateY(180deg)";
         }
-      };
+      }
     </script>
   </head>
   <body>
