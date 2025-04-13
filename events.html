@@ -8,29 +8,22 @@
     <link rel="stylesheet" href="events_section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
     <script>
-      function flip(event){
+      function flip(event) {
         var element = event.currentTarget;
         var openCards = document.querySelectorAll('.main-container[style*="rotateY(180deg)"]');
-        
         openCards.forEach(function(card) {
           if (card !== element) {
             card.style.transform = "rotateY(0deg)";
           }
         });
-
-        if (element.style.transform == "rotateY(180deg)") {
-          element.style.transform = "rotateY(0deg)";
-        } else {
-          element.style.transform = "rotateY(180deg)";
-        }
+        element.style.transform = element.style.transform === "rotateY(180deg)" ? "rotateY(0deg)" : "rotateY(180deg)";
       }
     </script>
   </head>
   <body>
 
-    <!-- navigation bar starts -->
+    <!-- Navigation Bar -->
     <header class="navigation-bar">
       <p class="branch-name">IEEE WIE MUJ</p>
       <nav class="navbar">
@@ -45,42 +38,173 @@
         </ul>
       </nav>
     </header>
-  <!-- navigation bar ends -->
-
+    
+    <!-- Events Section -->
     <div class="events-container">
-      
-      <div class="main-container" onclick="flip(event)">
-         <div class="thecard">
-           <div class="thefront">
-             <div class="events-img">
-               <img src="https://iili.io/26icOve.jpg" alt="">
-             </div>
-             <div class="event">
-               <span class="events-title">BITS N' BREWS 5.0</span>
-             </div>
-           </div>
-           <div class="theback">
-             <p>
-              IEEE WIE MUJ is excited to present Bits N’ Brews (Ep:5)—an inspiring alumni talk featuring Ms. Kritika Rag, Software Engineer at Google and tech trailblazer.           </div>
-         </div>
-         
-      </div> 
+
       <div class="main-container" onclick="flip(event)">
         <div class="thecard">
           <div class="thefront">
             <div class="events-img">
-              <img src="https://media.licdn.com/dms/image/v2/D4D22AQEILt5WOhpnTA/feedshare-shrink_1280/feedshare-shrink_1280/0/1733041080525?e=1740009600&v=beta&t=F3iytqDPicr-VbnriImI3gH0G207OE6PRoz7FJjPqzY" alt="">
+              <img src="https://iili.io/3lFrrQ9.md.jpg" alt="Hardwired Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">HardWired</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>A creative competition that challenges participants to design innovative, practical projects using Arduino, pushing the boundaries of technology and hands-on development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://iili.io/3lFrvkl.md.jpg"  alt="Artemis Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">Artemis: Mental Health Check-In</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>An empowering session dedicated to mental wellness, offering tools and strategies to manage stress, build resilience, and maintain balance in today's fast-paced world.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://iili.io/3lFrPEu.md.jpg" alt="Pandora Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">Pandora: AR/VR Workshop for Innovators</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>Step into the immersive world of AR/VR, where participants will create and experiment with technologies reshaping industries and experiences.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://iili.io/3lFrk74.md.jpg" alt="BinaryBloom Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">Binary Bloom: Web3 Development Indulgence</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>Delve into blockchain and Web3, learning to create decentralized solutions that are set to transform industries and everyday life.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://iili.io/3lFrNrG.md.jpg" alt="Datapulse Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">DataPulse: Mock Quant Datathon</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>An intense, high-energy datathon where participants analyze real-world datasets, applying quantitative methods to tackle complex challenges.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://iili.io/3lFre2f.md.jpg" alt="FutureSync Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">FutureSync: 3D Printing and Robotics Session</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>A hands-on workshop for 3D printing, applying creativity and problem-solving to real-world challenges.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://iili.io/3lFr6Be.md.jpg" alt="NextTech Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">NextTech: Computing Session</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>Discover the future of computing with quantum technologies and photonics, and explore their power to solve today's most pressing challenges.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="
+              https://iili.io/3lFrirb.md.jpg" alt="TechEden Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">TechEden: A Premier Tech Symposium</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>A dynamic gathering of industry leaders and tech enthusiasts, diving into the latest trends in AI, blockchain, and cutting-edge innovations shaping tomorrow.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://iili.io/26icOve.jpg" alt="BITS N' BREWS 5.0 Poster">
+            </div>
+            <div class="event">
+              <span class="events-title">BITS N' BREWS 5.0</span>
+            </div>
+          </div>
+          <div class="theback">
+            <p>IEEE WIE MUJ is excited to present Bits N’ Brews (Ep:5)—an inspiring alumni talk featuring Ms. Kritika Rag, Software Engineer at Google and tech trailblazer.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="main-container" onclick="flip(event)">
+        <div class="thecard">
+          <div class="thefront">
+            <div class="events-img">
+              <img src="https://media.licdn.com/dms/image/v2/D4D22AQEILt5WOhpnTA/feedshare-shrink_1280/feedshare-shrink_1280/0/1733041080525?e=1740009600&v=beta&t=F3iytqDPicr-VbnriImI3gH0G207OE6PRoz7FJjPqzY" alt="CODER'S CRUSADE Poster">
             </div>
             <div class="event">
               <span class="events-title">CODER'S CRUSADE</span>
             </div>
           </div>
           <div class="theback">
-            <p>
-              On 27th November 2024, IEEE WIE MUJ hosted Coders Crusade, an engaging and educational event designed to introduce budding programmers to the exciting world of C programming and the foundations of competitive coding.            </p>
+            <p>On 27th November 2024, IEEE WIE MUJ hosted Coders Crusade, an engaging and educational event designed to introduce budding programmers to C programming and competitive coding.</p>
           </div>
         </div>
       </div>
+
       <div class="main-container" onclick="flip(event)">
         <div class="thecard">
           <div class="thefront">
