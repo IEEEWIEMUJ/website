@@ -310,6 +310,7 @@ export default function Home() {
               </div>
             </div>
           </section>
+          <div className="w-[80%] mx-auto h-0.5 bg-gradient-to-r from-purple-500 via-purple-300 to-purple-500 opacity-90 rounded-full mb-12 blur-[0.5px] glow-line"></div>
 
           <section className="bg-gradient-to-b from-black to-purple-900/80 py-20 px-6 md:px-20">
 
