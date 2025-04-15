@@ -241,3 +241,6 @@
   background: #ababab;
   color: #fff;
 }
+.white-icon {
+  color: white !important;
+}

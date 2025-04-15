@@ -60,12 +60,12 @@ const SliderSection = () => {
           </div>
         ))}
       </div>
-      <div className="button">
-        <button className="prev" onClick={prevSlide}>
-          <i className="fa-solid fa-arrow-left"></i>
+      <div className="button ">
+        <button className="prev bg-black" onClick={prevSlide}>
+          <i className="fa-solid fa-arrow-left white-icon">L</i>
         </button>
-        <button className="next" onClick={nextSlide}>
-          <i className="fa-solid fa-arrow-right"></i>
+        <button className="next bg-black" onClick={nextSlide}>
+          <i className="fa-solid fa-arrow-right white-icon" >R</i>
         </button>
       </div>
     </section>
