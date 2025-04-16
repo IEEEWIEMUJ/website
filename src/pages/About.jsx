@@ -11,7 +11,6 @@ function About() {
         className="text-center mb-10"
       >
         <h2 className="text-3xl md:text-4xl pt-10 font-bold text-center font-cambo text-purple-200 mb-4 relative">
-          <div className="wavy-glow-line "></div>
           IEEE Women in Engineering 
         </h2>
         <p className="text-xs sm:text-sm md:text-base pb-10 text-purple-300 mb-4 sm:mb-10 tracking-widest xt-wide">
