@@ -49,23 +49,25 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.path}
-                to={link.path}
-                className={({ isActive }) =>
-                  `text-lg font-medium transition-all ${
-                    isActive
-                      ? "text-purple-100 border-b-2 border-purple-400"
-                      : "text-purple-300 hover:text-purple-100"
-                  }`
-                }
-              >
-                {link.label}
-              </NavLink>
-            ))}
-          </div>
+          <div className="hidden md:flex space-x-6">
+  {navLinks.map((link) => (
+    <NavLink
+      key={link.path}
+      to={link.path}
+      className={({ isActive }) =>
+        `relative px-3 py-1 text-lg font-medium transition duration-300 ease-in-out 
+        ${
+          isActive
+            ? "text-purple-100 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-purple-400"
+            : "text-purple-300 hover:text-purple-100 hover:after:content-[''] hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-0.5 hover:after:bg-purple-200"
+        }`
+      }
+    >
+      {link.label}
+    </NavLink>
+  ))}
+</div>
+
 
           {/* Mobile Menu Button */}
           <button
