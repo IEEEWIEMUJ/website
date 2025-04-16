@@ -27,17 +27,26 @@ export default function Header() {
         scrolled ? "py-2 bg-purple-950/80 shadow-md" : "py-5 bg-purple-950/60"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-2"> {/* px-2 to move logo/title even more left */}
         <nav className="flex justify-between items-center font-inter">
-          {/* Logo */}
-          <Link
-            to="/"
-            className={`text-purple-200 font-bold tracking-wide transition-all duration-300 ${
-              scrolled ? "text-2xl" : "text-3xl"
-            }`}
-          >
-            IEEE WIE MUJ
-          </Link>
+          {/* Logo and Title - Aligned Left & Logo Shrinks on Scroll */}
+          <div className="flex justify-start items-center space-x-3">
+            <img
+              src="/wie_logo.png"
+              alt="WIE Logo"
+              className={`transition-all duration-300 ${
+                scrolled ? "h-10" : "h-8 sm:h-12"
+              }`}
+            />
+            <Link
+              to="/"
+              className={`text-purple-200 font-bold tracking-wide font-cambo transition-all duration-300 ${
+                scrolled ? "text-2xl" : "text-3xl"
+              }`}
+            >
+              IEEE WIE MUJ
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
@@ -88,32 +97,31 @@ export default function Header() {
             </svg>
           </button>
         </nav>
+      </div>
 
-        {/* Mobile Navigation */}
-        <div
-          className={`md:hidden transition-all duration-300 overflow-hidden ${
-            mobileMenuOpen ? "max-h-64 opacity-100 pt-4" : "max-h-0 opacity-0"
-          }`}
-        >
-          <ul className="flex flex-col space-y-3 font-inter">
-            {navLinks.map((link) => (
-              <li key={link.path}>
-                <NavLink
-                  to={link.path}
-                  className={({ isActive }) =>
-                    `block text-lg px-2 transition-colors ${
-                      isActive
-                        ? "text-purple-300 border-l-4 border-purple-400"
-                        : "text-purple-500 hover:text-purple-200 hover:border-l-4 hover:border-purple-300"
-                    }`
-                  }
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+      {/* Fullscreen Mobile Navigation */}
+      <div
+        className={`md:hidden fixed top-0 left-0 w-full h-screen bg-purple-950/80 backdrop-blur-lg z-40 transition-opacity duration-300 ${
+          mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        <div className="flex flex-col items-center justify-center h-full space-y-6">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) =>
+                `text-2xl font-semibold px-4 py-2 transition-colors ${
+                  isActive
+                    ? "text-purple-100 border-b-2 border-purple-300"
+                    : "text-purple-300 hover:text-white"
+                }`
+              }
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {link.label}
+            </NavLink>
+          ))}
         </div>
       </div>
     </header>

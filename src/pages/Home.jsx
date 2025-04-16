@@ -10,7 +10,7 @@ export default function Home() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  
+
   const blogData = [
     {
       id: 1,
@@ -107,6 +107,12 @@ export default function Home() {
         >
           {/* Top and Bottom Purple Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-purple-900/80 via-transparent to-purple-900/80 backdrop-blur-sm z-0" />
+          {/* Watermark Image */}
+          <img
+            src="/wie_logo.png"
+            alt="WIE Watermark"
+            className="absolute inset-0 mx-auto my-auto w-64 sm:w-80 md:w-96 lg:w-[28rem] opacity-10 z-1 pointer-events-none"
+          />
 
           {/* Content */}
           <div className="relative z-10 max-w-4xl w-full">
@@ -313,10 +319,8 @@ export default function Home() {
           <div className="w-[80%] mx-auto h-0.5 bg-gradient-to-r from-purple-500 via-purple-300 to-purple-500 opacity-90 rounded-full mb-12 blur-[0.5px] glow-line"></div>
 
           <section className="bg-gradient-to-b from-black to-purple-900/80 py-20 px-6 md:px-20">
-
-          <SliderSection />
+            <SliderSection />
           </section>
-
         </div>
       </div>
     </>
