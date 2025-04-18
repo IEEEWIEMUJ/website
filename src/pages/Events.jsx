@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Events.css";
+import EventBanner from "./EventBanner"; // Import the EventBanner component
+
 
 function Events() {
   const events = [
@@ -78,6 +80,10 @@ function Events() {
     }));
   };
 
+  
+  
+  
+
   return (
     <section className="events-section eventss py-20 px-6 md:px-20 bg-gradient-to-b from-purple-900/80 via-black/70 to-purple-900/80">
       <div className="container mx-auto mt-10">
@@ -85,31 +91,7 @@ function Events() {
           <div className="wavy-glow-line"></div>
           Events
         </h2>
-        <div
-          className="relative bg-cover bg-center rounded-3xl overflow-hidden shadow-xl mb-16"
-          style={{ backgroundImage: "url('/techeden.jpg')" }}
-          data-aos="fade-up"
-        >
-          <div className="bg-black/60 backdrop-blur-sm w-full h-full flex flex-col lg:flex-row items-center justify-between p-6 md:p-12 gap-6">
-            <img
-              src="/techeden.jpg"
-              alt="TechEden"
-              className="w-full max-w-xs rounded-xl shadow-md"
-              data-aos="fade-right"
-            />
-            <div className="text-purple-100" data-aos="fade-left">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                TechEden: A Premier Tech Symposium
-              </h2>
-              <p className="text-sm text-purple-300 mb-2">April 4, 2025</p>
-              <p className="text-base text-purple-200 max-w-2xl">
-                A dynamic gathering of industry leaders and tech enthusiasts,
-                diving into the latest trends in AI, blockchain, and
-                cutting-edge innovations shaping tomorrow.
-              </p>
-            </div>
-          </div>
-        </div>
+        <EventBanner /> 
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {events.slice(2).map((event) => (
@@ -118,9 +100,9 @@ function Events() {
               className="flex flex-col items-center hologram-card cursor-pointer"
               onClick={() => handleCardFlip(event.id)} 
             >
-              {/* Hologram container */}
+              {/* Hologram */}
               <div className="relative flex flex-col items-center h-[400px] w-[250px]  transition-all duration-500 ease-in-out transform hover:scale-[1.025] hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] card-glow">
-                {/* Projection content */}
+                {/* Projection */}
                 {!flippedCards[event.id] ? (
                   <img
                     src={event.image}
@@ -145,9 +127,9 @@ function Events() {
                   </div>
                 )}
 
-                <div class="hologram-base">
-                  <div class="scan-line"></div>
-                  <div class="hologram-content">
+                <div className="hologram-base">
+                  <div className="scan-line"></div>
+                  <div className="hologram-content">
                     <h3>{event.title}</h3>
                     <p>{event.date}</p>
                   </div>

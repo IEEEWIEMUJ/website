@@ -166,9 +166,9 @@ export default function Home() {
       </section>
 
       {/* EVENTS */}
-      <section className="py-20 px-6 md:px-20 bg-black">
+      <section className="py-20 px-6 md:px-20 bg-black" data-aos="fade-up">
         <h2 className="text-4xl font-bold text-center text-purple-200 mb-12">Events</h2>
-        <div className="grid md:grid-cols-3 gap-8" data-aos="fade-up">
+        <div className="grid md:grid-cols-3 gap-8" >
           {eventData.map((event) => (
             <motion.div
               key={event.id}
@@ -191,10 +191,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SLIDER */}
+      {/* PAST EVENTS */}
       <section className="py-20 px-6 md:px-20 bg-gradient-to-b from-black to-purple-950">
+        <div data-aos="fade-up">
+
         <h2 className="text-4xl font-bold text-center text-purple-100 mb-8">Past Events</h2>
         <SliderSection />
+        </div>
       </section>
     </div>
   );

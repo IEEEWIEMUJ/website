@@ -27,9 +27,9 @@ export default function Header() {
         scrolled ? "py-2 bg-purple-950/80 shadow-md" : "py-5 bg-purple-950/60"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-2"> {/* px-2 to move logo/title even more left */}
+      <div className="max-w-6xl mx-auto px-2"> 
         <nav className="flex justify-between items-center font-inter">
-          {/* Logo and Title - Aligned Left & Logo Shrinks on Scroll */}
+          
           <div className="flex justify-start items-center space-x-3">
             <img
               src="/wie_logo.png"
