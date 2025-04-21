@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
     { path: "/", label: "Home" },
@@ -27,9 +29,8 @@ export default function Header() {
         scrolled ? "py-2 bg-purple-950/80 shadow-md" : "py-5 bg-purple-950/60"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-2"> 
+      <div className="max-w-6xl mx-auto px-2">
         <nav className="flex justify-between items-center font-inter">
-          
           <div className="flex justify-start items-center space-x-3">
             <img
               src="/wie_logo.png"
@@ -49,25 +50,27 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
-  {navLinks.map((link) => (
-    <NavLink
-      key={link.path}
-      to={link.path}
-      className={({ isActive }) =>
-        `relative px-3 py-1 text-lg font-medium transition duration-300 ease-in-out 
-        ${
-          isActive
-            ? "text-purple-100 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-purple-400"
-            : "text-purple-300 hover:text-purple-100 hover:after:content-[''] hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-0.5 hover:after:bg-purple-200"
-        }`
-      }
-    >
-      {link.label}
-    </NavLink>
-  ))}
-</div>
-
+          <div className="hidden md:flex space-x-6 relative">
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              return (
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  className="relative px-3 py-1 text-lg font-medium text-purple-300 hover:text-purple-100"
+                >
+                  {isActive && (
+                    <motion.div
+                      layoutId="nav-bubble"
+                      className="absolute inset-0 bg-rose-700 rounded-full z-[-1]"
+                      transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                    />
+                  )}
+                  {link.label}
+                </NavLink>
+              );
+            })}
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -103,7 +106,7 @@ export default function Header() {
 
       {/* Fullscreen Mobile Navigation */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full h-screen bg-purple-950/80 backdrop-blur-lg z-40 transition-opacity duration-300 ${
+        className={`md:hidden fixed top-0 left-0 w-full h-screen bg-purple-950/95 backdrop-blur-lg z-40 transition-opacity duration-300 ${
           mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >

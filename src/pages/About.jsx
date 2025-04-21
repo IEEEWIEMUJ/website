@@ -31,7 +31,7 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-purple-950 to-black text-white px-6 md:px-20 py-35">
+    <div className="min-h-screen bg-gradient-to-b from-purple-950 via-black to-purple-950 text-white px-6 md:px-20 py-35">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

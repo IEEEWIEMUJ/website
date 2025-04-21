@@ -2,6 +2,7 @@ import React from "react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+// Executive Committee Data
 const executiveCommittee = [
   {
     id: 1,
@@ -67,6 +68,7 @@ const executiveCommittee = [
   },
 ];
 
+// Core Committee Data
 const coreCommittee = [
   {
     id: 8,
@@ -88,39 +90,49 @@ const coreCommittee = [
   },
 ];
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i) => ({
+// Animation Variants
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
-      delay: i * 0.1,
-      ease: "easeOut",
+      type: "spring",
+      stiffness: 100,
+      damping: 15,
     },
-  }),
+  },
 };
 
-const TeamCard = ({ member, index }) => {
+// Card Component
+const TeamCard = ({ member }) => {
   const { name, designation, img, instagram, linkedin, github } = member;
 
   return (
     <motion.div
-      className="bg-black/30 border border-purple-700 rounded-3xl p-6 shadow-xl backdrop-blur-md transition-transform hover:scale-105 w-full max-w-xs"
-      custom={index}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      variants={fadeIn}
+      variants={cardVariants}
+      className="bg-white/10 border border-white/20 backdrop-blur-lg rounded-3xl p-6 shadow-2xl hover:scale-[1.03] transition-transform duration-300 w-full max-w-xs group"
     >
       <img
         src={img}
         alt={name}
-        className="w-full h-60 object-cover rounded-xl border-4 border-purple-700 mb-4"
+        className="w-full h-64 object-cover rounded-2xl border border-purple-500 mb-4 transition-transform group-hover:scale-105"
       />
-      <h3 className="text-xl font-semibold text-purple-100 mb-1">{name}</h3>
-      <p className="text-purple-400 text-sm mb-4">{designation}</p>
-      <div className="flex justify-center gap-4 text-xl text-purple-300">
+      <h3 className="text-xl font-semibold text-purple-100 mb-1 text-center">
+        {name}
+      </h3>
+      <p className="text-purple-400 text-sm mb-4 text-center">{designation}</p>
+      <div className="flex justify-center gap-5 text-xl text-purple-300">
         {instagram && (
           <a href={instagram} target="_blank" rel="noopener noreferrer">
             <FaInstagram className="hover:text-pink-500 transition" />
@@ -141,41 +153,58 @@ const TeamCard = ({ member, index }) => {
   );
 };
 
+// Main Component
 export default function Team() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-purple-950 to-black text-white py-35 px-6 md:px-12">
+    <div className="min-h-screen bg-gradient-to-b from-purple-950 via-black to-purple-950 text-white py-24 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
+        {/* Executive Heading */}
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center text-purple-200 mb-16"
+          className="text-4xl md:text-5xl font-bold text-center text-purple-100 mb-16"
         >
           Executive Committee
         </motion.h2>
 
-        <div className="flex flex-wrap justify-center gap-10">
-          {executiveCommittee.map((member, i) => (
-            <TeamCard key={member.id} member={member} index={i} />
-          ))}
-        </div>
-
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+        {/* Executive Cards */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-10"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center text-purple-200 mt-24 mb-16"
+        >
+          {executiveCommittee.map((member) => (
+            <TeamCard key={member.id} member={member} />
+          ))}
+        </motion.div>
+
+        {/* Core Heading */}
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-bold text-center text-purple-100 mt-28 mb-16"
         >
           Core Committee
         </motion.h2>
 
-        <div className="flex flex-wrap justify-center gap-10">
-          {coreCommittee.map((member, i) => (
-            <TeamCard key={member.id} member={member} index={i + executiveCommittee.length} />
+        {/* Core Cards */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-10"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {coreCommittee.map((member) => (
+            <TeamCard key={member.id} member={member} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
