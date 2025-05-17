@@ -94,50 +94,43 @@ function Events() {
         <EventBanner /> 
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {events.slice(2).map((event) => (
-            <div
-              key={event.id}
-              className="flex flex-col items-center hologram-card cursor-pointer"
-              onClick={() => handleCardFlip(event.id)} 
-            >
-              {/* Hologram */}
-              <div className="relative flex flex-col items-center h-[400px] w-[250px]  transition-all duration-500 ease-in-out transform hover:scale-[1.025] hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] card-glow">
-                {/* Projection */}
-                {!flippedCards[event.id] ? (
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className={`hologram-poster ${
-                      !flippedCards[event.id] ? "card-visible" : "card-hidden"
-                    }`}
-                  />
-                ) : (
-                  <div
-                    className={`hologram-description ${
-                      flippedCards[event.id] ? "card-visible" : "card-hidden"
-                    } text-center px-4 py-3`}
-                  >
-                    <h3 className="font-bold text-base mb-2 text-purple-200">
-                      {event.title}
-                    </h3>
-                    <p className="text-xs text-purple-400 mb-2">{event.date}</p>
-                    <p className="text-xs text-purple-300">
-                      {event.description}
-                    </p>
-                  </div>
-                )}
-
-                <div className="hologram-base">
-                  <div className="scan-line"></div>
-                  <div className="hologram-content">
-                    <h3>{event.title}</h3>
-                    <p>{event.date}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+  {events.slice(2).map((event) => (
+    <div
+      key={event.id}
+      className="perspective-[1500px] cursor-pointer"
+      onClick={() => handleCardFlip(event.id)}
+    >
+      <div
+        className={`relative w-[250px] h-[400px] duration-700 transform-style-preserve-3d transition-transform ${
+          flippedCards[event.id] ? 'rotate-y-180' : ''
+        } hover:scale-[1.025] hover:shadow-[0_0_30px_rgba(168,85,247,0.6)]`}
+      >
+        {/* Front side */}
+        <div className="absolute inset-0 bg-black/60 rounded-2xl overflow-hidden backface-hidden flex items-center justify-center p-4">
+          <img
+            src={event.image}
+            alt={event.title}
+            className="object-cover h-full w-full rounded-2xl"
+          />
+          <div className="absolute bottom-0 w-full text-center bg-gradient-to-t from-black via-transparent to-transparent py-4 text-purple-200">
+            <h3 className="font-bold bg-black/70 text-base">{event.title}</h3>
+            <p className="text-xs  bg-black/70 ">{event.date}</p>
+          </div>
         </div>
+
+        {/* Back side */}
+        <div className="absolute inset-0 bg-purple-950/80 rounded-2xl p-4 text-center transform rotate-y-180 backface-hidden flex flex-col justify-center">
+          <h3 className="font-bold text-lg text-purple-200 mb-2">
+            {event.title}
+          </h3>
+          <p className="text-sm text-purple-400 mb-2">{event.date}</p>
+          <p className="text-xs text-purple-300">{event.description}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );

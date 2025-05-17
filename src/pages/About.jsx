@@ -2,13 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 60 },
-  visible: (i) => ({
+  hidden: { opacity: 0, y: 40 },
+  visible: (i = 1) => ({
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.8,
       delay: i * 0.3,
+      duration: 0.8,
       ease: "easeOut",
     },
   }),
@@ -31,27 +31,25 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-950 via-black to-purple-950 text-white px-6 md:px-20 py-35">
-      <motion.h2
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+    <div className="min-h-screen bg-gradient-to-b from-purple-950 via-black to-purple-950 text-white px-6 md:px-20 py-28">
+      
+      
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-4xl md:text-5xl font-bold text-center text-purple-100 mb-8 font-cambo"
+        variants={fadeInUp}
+        className="text-center"
       >
-        IEEE Women in Engineering
-      </motion.h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-purple-100 mb-4 font-cambo">
+          IEEE Women in Engineering
+        </h2>
+        <p className="text-sm md:text-base text-purple-400 tracking-wider mb-16">
+          Manipal University Jaipur
+        </p>
+      </motion.div>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="text-sm md:text-base text-center text-purple-400 tracking-wider mb-16"
-      >
-        Manipal University Jaipur
-      </motion.p>
-
+      
       <div className="max-w-4xl mx-auto space-y-16">
         {sections.map((section, index) => (
           <motion.div
@@ -61,7 +59,7 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white/5 border border-purple-800 rounded-2xl p-8 shadow-2xl backdrop-blur-md"
+            className="bg-white/5 border border-purple-800 rounded-2xl p-8 shadow-xl backdrop-blur-md hover:shadow-purple-500/20 transition-shadow duration-300"
           >
             <p className="text-base md:text-lg text-purple-300 leading-relaxed">
               {section.text}
@@ -70,12 +68,14 @@ export default function About() {
         ))}
       </div>
 
+      
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 1.5 }}
-        className="text-center mt-20"
+        variants={fadeInUp}
+        custom={sections.length + 1}
+        className="text-center mt-24"
       >
         <p className="text-sm md:text-lg text-purple-400 max-w-3xl mx-auto leading-relaxed">
           Join us in our journey towards making a difference and becoming the

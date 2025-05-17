@@ -12,7 +12,7 @@ export default function Header() {
     { path: "/events", label: "Events" },
     { path: "/team", label: "Our Team" },
     { path: "/about", label: "About Us" },
-    { path: "/gallery", label: "Gallery" },
+    { path: "/sponsors", label: "Sponsors" },
   ];
 
   useEffect(() => {

@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 import Events from "../pages/Events";
 import About from "../pages/About";
 import Team from "../pages/Team";
-import Gallery from "../pages/Gallery";
+import Sponsors from "../pages/Sponsors";
 
 
 export default function AppRoutes() {
@@ -18,7 +18,7 @@ export default function AppRoutes() {
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
           <Route path="/about" element={<About />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/sponsors" element={<Sponsors />} />
         </Routes>
       
   );
