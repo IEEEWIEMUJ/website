@@ -8,7 +8,7 @@ function Events() {
     {
       id: 90,
       title: "BrandIT 2.0",
-      image: "\brandit2.0.jpg",
+      image: "/Events/brandit2.0.jpg",
       date: "18 June",
       year: "2025",
       isPast: false,
@@ -18,7 +18,7 @@ function Events() {
     {
       id: 89,
       title: "HardWired",
-      image: "\hardwired.jpg",
+      image: "/Events/HardWired.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -28,7 +28,7 @@ function Events() {
     {
       id: 88,
       title: "Artemis: Mental Health Check-In",
-      image: "https://iili.io/3lFrvkl.md.jpg",
+      image: "/Events/Artemis.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -38,7 +38,7 @@ function Events() {
     {
       id: 87,
       title: "Pandora: AR/VR Workshop for Innovators",
-      image: "https://iili.io/3lFrPEu.md.jpg",
+      image: "/Events/Pandora.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -48,7 +48,7 @@ function Events() {
     {
       id: 86,
       title: "Binary Bloom: Web3 Development Indulgence",
-      image: "https://iili.io/3lFrk74.md.jpg",
+      image: "/Events/Binary_Bloom.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -58,7 +58,7 @@ function Events() {
     {
       id: 85,
       title: "DataPulse: Mock Quant Datathon",
-      image: "https://iili.io/3lFrNrG.md.jpg",
+      image: "/Events/DataPulse.jpg",
       date: "4-5 April",
       year: "2025",
       isPast: true,
@@ -68,7 +68,7 @@ function Events() {
     {
       id: 84,
       title: "FutureSync: 3D Printing and Robotics Session",
-      image: "https://iili.io/3lFre2f.md.jpg",
+      image: "/Events/FutureSync.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -78,7 +78,7 @@ function Events() {
     {
       id: 83,
       title: "NextTech: Computing Session",
-      image: "https://iili.io/3lFr6Be.md.jpg",
+      image: "/Events/NextTech.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -88,7 +88,7 @@ function Events() {
     {
       id: 82,
       title: "TechEden: A Premier Tech Symposium",
-      image: "https://iili.io/3lFrirb.md.jpg",
+      image: "/Events/TechEden.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -98,7 +98,7 @@ function Events() {
     {
       id: 81,
       title: "BITS N' BREWS 5.0",
-      image: "https://iili.io/26icOve.jpg",
+      image: "/Events/BITS.jpg",
       date: "11 January",
       year: "2025",
       isPast: true,
@@ -109,8 +109,8 @@ function Events() {
       id: 80,
       title: "CODER'S CRUSADE",
       image:
-        "https://media.licdn.com/dms/image/v2/D4D22AQEILt5WOhpnTA/feedshare-shrink_1280/feedshare-shrink_1280/0/1733041080525?e=1740009600&v=beta&t=F3iytqDPicr-VbnriImI3gH0G207OE6PRoz7FJjPqzY",
-      date: "27 November",
+        "/Events/coders_crusade.jpg",
+        date: "27 November",
       year: "2024",
       isPast: true,
       description:
@@ -120,7 +120,7 @@ function Events() {
       id: 79,
       title: "BALLISTIC",
       image:
-        "https://images.prismic.io/ieeemuj/Zv26D7VsGrYSwUT-_BALLISTICMAINPOSTER-1-.png?auto=format,compress",
+        "/Events/BALLISTIC.jpg",
       date: "3 October",
       year: "2024",
       isPast: true,
@@ -131,7 +131,7 @@ function Events() {
       id: 78,
       title: "WRITE IT RIGHT",
       image:
-        "https://images.prismic.io/ieeemuj/ZvMbF7VsGrYSv4gJ_writeitrightnew-01.png?auto=format,compress",
+        "/Events/write_it_right.jpg",
       date: "26 September",
       year: "2024",
       isPast: true,
@@ -142,7 +142,7 @@ function Events() {
       id: 77,
       title: "FOR THE RECORD",
       image:
-        "https://images.prismic.io/ieeemuj/ZvMYbbVsGrYSv4Tr_FTRMAINPOSTER.png?auto=format,compress",
+        "/Events/for_the_record.jpg",
       date: "27 September",
       year: "2024",
       isPast: true,
@@ -153,7 +153,7 @@ function Events() {
       id: 76,
       title: "TECH SUMMIT 3.0",
       image:
-        "https://images.prismic.io/ieeemuj/Zv3IhLVsGrYSwUYq_TECHSUMMITMAINPOSTER.png?auto=format,compress",
+        "/Events/tech_summit.jpg",
       date: "5 October",
       year: "2024",
       isPast: true,
@@ -164,7 +164,7 @@ function Events() {
       id: 75,
       title: "BIT TO BYTE",
       image:
-        "https://images.prismic.io/ieeemuj/Zv5karVsGrYSwVDK_B2BPOSTER-1-.png?auto=format,compress",
+        "/Events/bit_to_byte.jpg",
       date: "4 October",
       year: "2024",
       isPast: true,
@@ -175,7 +175,7 @@ function Events() {
       id: 74,
       title: "BREACOUT 5.0",
       image:
-        "https://images.prismic.io/ieeemuj/ZvMbJLVsGrYSv4gW_BREACOUTMAINPOSTER-1-.png?auto=format,compress",
+        "/Events/breacout_5.jpg",
       date: "5 October",
       year: "2024",
       isPast: true,
@@ -186,7 +186,7 @@ function Events() {
       id: 73,
       title: "Networking Night With WIE",
       image:
-        "https://images.prismic.io/ieeemuj/ZvXUHrVsGrYSwDcE_NWWMAINPOSTER.png?auto=format,compress",
+        "/Events/networking_night.jpg",
       date: "6 October",
       year: "2024",
       isPast: true,
@@ -197,7 +197,7 @@ function Events() {
       id: 72,
       title: "TECHEXPO",
       image:
-        "https://images.prismic.io/ieeemuj/ZvXUWLVsGrYSwDcF_techexpomainposter.png?auto=format,compress",
+        "/Events/techexpo.jpg",
       date: "7 October",
       year: "2024",
       isPast: true,
@@ -208,7 +208,7 @@ function Events() {
       id: 71,
       title: "Pixel Forge",
       image:
-        "https://images.prismic.io/ieeemuj/ZvXT9LVsGrYSwDcC_pixelforgemainposter.png?auto=format,compress",
+        "/Events/pixel_forge.jpg",
       date: "3 October",
       year: "2024",
       isPast: true,
@@ -218,7 +218,7 @@ function Events() {
     {
       id: 70,
       title: "Cyber Grid",
-      image: "img/cybergrid.jpg",
+      image: "/Events/cybergrid.jpg",
       date: "28-31 August",
       year: "2024",
       isPast: true,
@@ -228,7 +228,7 @@ function Events() {
     {
       id: 69,
       title: "BrandIT",
-      image: "img/brandIT.jpg",
+      image: "/Events/brandIT.jpg",
       date: "3-5 August",
       year: "2024",
       isPast: true,
@@ -238,7 +238,7 @@ function Events() {
     {
       id: 68,
       title: "LeetFleet",
-      image: "img/leetfleet.jpg",
+      image: "/Events/leetfleet.jpg",
       date: "20 july",
       year: "2024",
       isPast: true,
@@ -248,7 +248,7 @@ function Events() {
     {
       id: 67,
       title: "TechClash",
-      image: "img/techClash.jpg",
+      image: "/Events/techClash.jpg",
       date: "28-30 june",
       year: "2024",
       isPast: true,
@@ -259,7 +259,7 @@ function Events() {
       id: 66,
       title: "APOTHEOSIS",
       image:
-        "https://images.prismic.io/ieeemuj/ZhuddDjCgu4jzzYy_fbdadd48-f79c-4cef-a548-2c28d1693fe9.jpeg?auto=format,compress",
+        "/Events/APOTHEOSIS.jpg",
       date: "12 April",
       year: "2024",
       isPast: true,
@@ -269,7 +269,7 @@ function Events() {
     {
       id: 65,
       title: "BITS N' BREWS EPISODE 2",
-      image: "img/bnbep2.jpg",
+      image: "/Events/bnbep2.jpg",
       date: "31 March",
       year: "2024",
       isPast: true,
@@ -279,7 +279,7 @@ function Events() {
     {
       id: 64,
       title: "EMPOWHER",
-      image: "img/Empowher.jpg",
+      image: "/Events/Empowher.jpg",
       date: "4-10 March",
       year: "2024",
       isPast: true,
@@ -290,7 +290,7 @@ function Events() {
       id: 63,
       title: "FUTURE FORGE",
       image:
-        "https://images.prismic.io/ieeemuj/f8b08a6c-1ead-4706-9d85-b2fb1bd52f31_IMG_5346.png?auto=compress,format",
+        "/Events/FUTURE_FORGE.avif",
       date: "23 February",
       year: "2024",
       isPast: true,
@@ -301,7 +301,7 @@ function Events() {
       id: 62,
       title: "WIENTER OF CODE",
       image:
-        "https://images.prismic.io/ieeemuj/ee77a442-6bb3-41f4-ac43-d1fae7e33dfc_899f34ff-1e96-471f-8c09-31844941f15c.jpeg?auto=compress,format",
+        "/Events/WIENTER_OF_CODE.avif",
       date: "13 January-2 February",
       year: "2024",
       isPast: true,
@@ -312,7 +312,7 @@ function Events() {
       id: 61,
       title: "BITS N BREWS",
       image:
-        "https://images.prismic.io/ieeemuj/0082a875-f3a7-420a-ae92-b7234c720e73_WhatsApp+Image+2023-12-26+at+11.43.44+PM.jpeg?auto=compress,format",
+        "/Events/BITS_N_BREWS.avif",
       date: "26 December",
       year: "2023",
       isPast: true,
@@ -323,7 +323,7 @@ function Events() {
       id: 60,
       title: "SINCONF'23",
       image:
-        "https://images.prismic.io/ieeemuj/b4a8da59-9e87-40ee-94b3-c9f242fc8d0d_ccca47e2-8961-4017-aeb3-cfbf47f07c78.jpeg?auto=compress,format",
+        "/Events/SINCONF.avif",
       date: "20 November",
       year: "2023",
       isPast: true,
@@ -334,7 +334,7 @@ function Events() {
       id: 59,
       title: "Tech Trends",
       image:
-        "https://images.prismic.io/ieeemuj/75c9c08d-3cfc-4b55-843c-e411131e4662_095c7788-4517-4345-ac76-110b0b25b2d9.jpeg?auto=compress,format",
+        "/Events/Tech_Trends.avif",
       date: "31 October",
       year: "2023",
       isPast: true,
@@ -345,7 +345,7 @@ function Events() {
       id: 58,
       title: "IC Hack 2.0",
       image:
-        "[https://images.prismic.io/ieeemuj/a81fad11-d3e8-4473-bc48-6f2682f436cc_ichackposterfinal+(1).png?auto=compress,format](https://images.prismic.io/ieeemuj/a81fad11-d3e8-4473-bc48-6f2682f436cc_ichackposterfinal+%281%29.png?auto=compress,format)",
+        "/Events/IC_Hack_2.avif",
       date: "7-8 October, 21-22 October",
       year: "2023",
       isPast: true,
@@ -355,7 +355,7 @@ function Events() {
     {
       id: 57,
       title: "Elohim",
-      image: "img/genesis_elohim.jpg",
+      image: "/Events/",
       date: "25 September",
       year: "2023",
       isPast: true,
@@ -365,7 +365,7 @@ function Events() {
     {
       id: 56,
       title: "Ballistic 3.0",
-      image: "img/ballistic_3.0.jpeg",
+      image: "/Events/ballistic_3.0.jpeg",
       date: "23-24 September",
       year: "2023",
       isPast: true,
@@ -375,7 +375,7 @@ function Events() {
     {
       id: 55,
       title: "Network with WIE 2.0",
-      image: "img/networkwithwie2.0.jpeg",
+      image: "/Events/networkwithwie2.0.jpeg",
       date: "23 September",
       year: "2023",
       isPast: true,
@@ -385,7 +385,7 @@ function Events() {
     {
       id: 54,
       title: "Tech Summit",
-      image: "img/techsummit01.jpeg",
+      image: "/Events/techsummit01.jpeg",
       date: "23 September",
       year: "2023",
       isPast: true,
@@ -395,7 +395,7 @@ function Events() {
     {
       id: 53,
       title: "Breacout 4.0",
-      image: "img/breacout4.jpeg",
+      image: "/Events/breacout4.jpeg",
       date: "23 September",
       year: "2023",
       isPast: true,
@@ -405,7 +405,7 @@ function Events() {
     {
       id: 52,
       title: "Lights Camera Auction",
-      image: "img/lca3.jpeg",
+      image: "/Events/lca3.jpeg",
       date: "22-23 September",
       year: "2023",
       isPast: true,
@@ -415,7 +415,7 @@ function Events() {
     {
       id: 51,
       title: "CODE-IT-ON 2.0",
-      image: "img/codeiton2.0.jpeg",
+      image: "/Events/codeiton2.0.jpeg",
       date: "22 September",
       year: "2023",
       isPast: true,
@@ -425,7 +425,7 @@ function Events() {
     {
       id: 50,
       title: "Digital Graffiti",
-      image: "img/digitalgraffiti.jpeg",
+      image: "/Events/digitalgraffiti.jpeg",
       date: "20 September",
       year: "2023",
       isPast: true,
@@ -435,7 +435,7 @@ function Events() {
     {
       id: 49,
       title: "CSS Combat",
-      image: "img/csscombat.jpeg",
+      image: "/Events/CSSCombat.jpeg",
       date: "4 January",
       year: "2023",
       isPast: true,
