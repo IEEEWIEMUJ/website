@@ -1,23 +1,22 @@
-import React from 'react'
-
+import React from 'react';
 import { motion } from "framer-motion";
 
-function EventBanner() {
+function EventBanner({ event }) {
   return (
     <motion.div
       className="relative bg-cover bg-center rounded-3xl overflow-hidden shadow-xl mb-16"
-      style={{ backgroundImage: "url('/techeden.jpg')" }}
+      style={{ backgroundImage: `url('${event.image}')` }}  
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }} 
+      viewport={{ once: true }}
       transition={{ duration: 1 }}
     >
       <div className="bg-black/60 backdrop-blur-sm w-full h-full flex flex-col lg:flex-row items-center justify-between p-6 md:p-12 gap-6">
         
         <motion.img
-          src="/techeden.jpg"
-          alt="TechEden"
+          src={event.image}  
+          alt={event.alt || event.title}  
           className="w-full max-w-xs rounded-xl shadow-md"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -33,9 +32,9 @@ function EventBanner() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            TechEden: A Premier Tech Symposium
+            {event.title}
           </motion.h2>
-          
+
           <motion.p
             className="text-sm text-purple-300 mb-2"
             initial={{ opacity: 0 }}
@@ -43,9 +42,9 @@ function EventBanner() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            April 4, 2025
+            {event.date}
           </motion.p>
-          
+
           <motion.p
             className="text-base text-purple-200 max-w-2xl"
             initial={{ opacity: 0 }}
@@ -53,7 +52,7 @@ function EventBanner() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            A dynamic gathering of industry leaders and tech enthusiasts, diving into the latest trends in AI, blockchain, and cutting-edge innovations shaping tomorrow.
+            {event.description}
           </motion.p>
         </div>
       </div>

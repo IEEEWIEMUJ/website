@@ -8,7 +8,7 @@ const executiveCommittee = [
     id: 1,
     name: "Ananta Taneja",
     designation: "Chairperson",
-    img: "/chair.jpg",
+    img: "/Team/chair.jpg",
     instagram: "https://instagram.com/ananta",
     linkedin: "https://linkedin.com/in/ananta",
     github: "https://github.com/ananta",

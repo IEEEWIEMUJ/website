@@ -1,24 +1,26 @@
 import React, { useRef } from 'react';
-import '../index.css'; // Assuming styles are in index.css
+import '../index.css'; 
 
 const images = [
   {
-    url: 'https://i.ibb.co/qCkd9jS/img1.jpg'
+    src: '/e1.jpg',
+    alt: 'Image 1'
   },
   {
-    url: 'https://i.ibb.co/jrRb11q/img2.jpg'
+    src: '/e2.jpg',
+    alt: 'Image 2'
   },
   {
-    url: 'https://i.ibb.co/NSwVv8D/img3.jpg'
+    src: '/e3.jpg',
+    alt: 'Image 3'
   },
   {
-    url: 'https://i.ibb.co/Bq4Q0M8/img4.jpg'
+    src: '/e9.HEIC',
+    alt: 'Image 9'
   },
   {
-    url: 'https://i.ibb.co/jTQfmTq/img5.jpg'
-  },
-  {
-    url: 'https://i.ibb.co/RNkk6L0/img6.jpg'
+    src: '/e7.jpg',
+    alt: 'Image 7'
   }
 ];
 
@@ -39,8 +41,19 @@ const SliderSection = () => {
     <section className="slider-container">
       <div className="slide" ref={slideRef}>
         {images.map((img, index) => (
-          <div className="item" style={{ backgroundImage: `url(${img.url})` }} key={index}>
-            
+          <div 
+            className="item flex-shrink-0 w-full h-full bg-cover bg-center bg-no-repeat relative" 
+            key={index}
+          >
+            <img
+              src={img.src}
+              alt={img.alt}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                // Fallback to a placeholder if image fails to load
+                e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23374151'/%3E%3Ctext x='400' y='300' text-anchor='middle' fill='%239CA3AF' font-size='24'%3EImage Not Found%3C/text%3E%3C/svg%3E";
+              }}
+            />
           </div>
         ))}
       </div>
