@@ -17,7 +17,7 @@ function Events() {
     {
       id: 89,
       title: "HardWired",
-      image: "/events/HardWired.jpg",
+      image: "/events/hardwired.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -37,7 +37,7 @@ function Events() {
     {
       id: 87,
       title: "Pandora: AR/VR Workshop for Innovators",
-      image: "/events/Pandora.jpg",
+      image: "/events/pandora.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -47,7 +47,7 @@ function Events() {
     {
       id: 86,
       title: "Binary Bloom: Web3 Development Indulgence",
-      image: "/events/Binary_Bloom.jpg",
+      image: "/events/binarybloom.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -57,7 +57,7 @@ function Events() {
     {
       id: 85,
       title: "DataPulse: Mock Quant Datathon",
-      image: "/events/DataPulse.jpg",
+      image: "/events/datapulse.jpg",
       date: "4-5 April",
       year: "2025",
       isPast: true,
@@ -67,7 +67,7 @@ function Events() {
     {
       id: 84,
       title: "FutureSync: 3D Printing and Robotics Session",
-      image: "/events/FutureSync.jpg",
+      image: "/events/futuresync.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -77,7 +77,7 @@ function Events() {
     {
       id: 83,
       title: "NextTech: Computing Session",
-      image: "/events/NextTech.jpg",
+      image: "/events/nexttech.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -87,7 +87,7 @@ function Events() {
     {
       id: 82,
       title: "TechEden: A Premier Tech Symposium",
-      image: "/events/TechEden.jpg",
+      image: "/events/techeden.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -97,7 +97,7 @@ function Events() {
     {
       id: 81,
       title: "BITS N' BREWS 5.0",
-      image: "/events/BITS.jpg",
+      image: "/events/bits5.jpg",
       date: "11 January",
       year: "2025",
       isPast: true,
