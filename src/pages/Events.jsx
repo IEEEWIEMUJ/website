@@ -96,6 +96,26 @@ function Events() {
     },
     {
       id: 81,
+      title: "Promptopia",
+      image: "/Events/promptopia.jpg",
+      date: "11 January",
+      year: "2025",
+      isPast: true,
+      description:
+        "IEEE WIE MUJ is excited to present Bits N' Brews (Ep:5)—an inspiring alumni talk featuring Ms. Kritika Rag, Software Engineer at Google and tech trailblazer.",
+    },
+    {
+      id: 82,
+      title: "VisionIAS",
+      image: "/Events/visionias.jpg",
+      date: "11 January",
+      year: "2025",
+      isPast: true,
+      description:
+        "IEEE WIE MUJ is excited to present Bits N' Brews (Ep:5)—an inspiring alumni talk featuring Ms. Kritika Rag, Software Engineer at Google and tech trailblazer.",
+    },
+    {
+      id: 81,
       title: "BITS N' BREWS 5.0",
       image: "/Events/bits5.jpg",
       date: "11 January",
@@ -137,7 +157,7 @@ function Events() {
     {
       id: 77,
       title: "FOR THE RECORD",
-      image: "/Events/for_the_record.jpg",
+      image: "/Events/for_the_record.avif",
       date: "27 September",
       year: "2024",
       isPast: true,
@@ -147,7 +167,7 @@ function Events() {
     {
       id: 76,
       title: "TECH SUMMIT 3.0",
-      image: "/Events/tech_summit.jpg",
+      image: "/Events/techsummit3.avif",
       date: "5 October",
       year: "2024",
       isPast: true,
@@ -157,7 +177,7 @@ function Events() {
     {
       id: 75,
       title: "BIT TO BYTE",
-      image: "/Events/bit_to_byte.jpg",
+      image: "/Events/bittobyte.avif",
       date: "4 October",
       year: "2024",
       isPast: true,
@@ -167,7 +187,7 @@ function Events() {
     {
       id: 74,
       title: "BREACOUT 5.0",
-      image: "/Events/breacout_5.jpg",
+      image: "/Events/breacout5.avif",
       date: "5 October",
       year: "2024",
       isPast: true,
@@ -177,7 +197,7 @@ function Events() {
     {
       id: 73,
       title: "Networking Night With WIE",
-      image: "/Events/networking_night.jpg",
+      image: "/Events/networkwithwie2.0.jpeg",
       date: "6 October",
       year: "2024",
       isPast: true,
@@ -187,7 +207,7 @@ function Events() {
     {
       id: 72,
       title: "TECHEXPO",
-      image: "/Events/techexpo.jpg",
+      image: "/Events/techexpo.avif",
       date: "7 October",
       year: "2024",
       isPast: true,
@@ -197,7 +217,7 @@ function Events() {
     {
       id: 71,
       title: "Pixel Forge",
-      image: "/Events/pixel_forge.jpg",
+      image: "/Events/Pixel_Forge.avif",
       date: "3 October",
       year: "2024",
       isPast: true,
@@ -247,7 +267,7 @@ function Events() {
     {
       id: 66,
       title: "APOTHEOSIS",
-      image: "/Events/APOTHEOSIS.jpg",
+      image: "/Events/APOTHEOSIS.avif",
       date: "12 April",
       year: "2024",
       isPast: true,
@@ -337,7 +357,7 @@ function Events() {
     {
       id: 57,
       title: "Elohim",
-      image: "/Events/",
+      image: "/Events/genesis_elohim.jpg",
       date: "25 September",
       year: "2023",
       isPast: true,
@@ -427,7 +447,7 @@ function Events() {
     {
       id: 48,
       title: "College Starter Pack'23",
-      image: "/Events/college_starter_pack.jpg",
+      image: "/Events/collegestarterpack.avif",
       date: "26 August",
       year: "2023",
       isPast: true,
@@ -437,7 +457,7 @@ function Events() {
     {
       id: 47,
       title: "Cosmic Canvas",
-      image: "/Events/cosmiccanvas.jpg",
+      image: "/Events/cosmiccanvas.avif",
       date: "28 June",
       year: "2023",
       isPast: true,
@@ -547,7 +567,7 @@ function Events() {
     {
       id: 36,
       title: "Network with WIE",
-      image: "/Events/NetworkingNight.png",
+      image: "/Events/NetworkingNight.avif",
       date: "8 October",
       year: "2022",
       isPast: true,
@@ -878,7 +898,7 @@ function Events() {
     {
       id: 3,
       title: "Machine Learning",
-      image: "/Events/MachineLearning.JPG",
+      image: "/Events/machinelearning.JPG",
       date: "7 August",
       year: "2020",
       isPast: true,
