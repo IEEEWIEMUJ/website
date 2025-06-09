@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Search, Calendar, ChevronDown } from "lucide-react";
 import EventBanner from "./EventBanner";
 
-
 function Events() {
   const allEvents = [
     {
       id: 90,
       title: "BrandIT 2.0",
-      image: "/Events/brandit2.0.jpg",
+      image: "/events/brandit2.0.jpg",
       date: "18 June",
       year: "2025",
       isPast: false,
@@ -18,7 +17,7 @@ function Events() {
     {
       id: 89,
       title: "HardWired",
-      image: "/Events/HardWired.jpg",
+      image: "/events/HardWired.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -28,7 +27,7 @@ function Events() {
     {
       id: 88,
       title: "Artemis: Mental Health Check-In",
-      image: "/Events/Artemis.jpg",
+      image: "/events/artemis.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -38,7 +37,7 @@ function Events() {
     {
       id: 87,
       title: "Pandora: AR/VR Workshop for Innovators",
-      image: "/Events/Pandora.jpg",
+      image: "/events/Pandora.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -48,7 +47,7 @@ function Events() {
     {
       id: 86,
       title: "Binary Bloom: Web3 Development Indulgence",
-      image: "/Events/Binary_Bloom.jpg",
+      image: "/events/Binary_Bloom.jpg",
       date: "5 April",
       year: "2025",
       isPast: true,
@@ -58,7 +57,7 @@ function Events() {
     {
       id: 85,
       title: "DataPulse: Mock Quant Datathon",
-      image: "/Events/DataPulse.jpg",
+      image: "/events/DataPulse.jpg",
       date: "4-5 April",
       year: "2025",
       isPast: true,
@@ -68,7 +67,7 @@ function Events() {
     {
       id: 84,
       title: "FutureSync: 3D Printing and Robotics Session",
-      image: "/Events/FutureSync.jpg",
+      image: "/events/FutureSync.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -78,7 +77,7 @@ function Events() {
     {
       id: 83,
       title: "NextTech: Computing Session",
-      image: "/Events/NextTech.jpg",
+      image: "/events/NextTech.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -88,7 +87,7 @@ function Events() {
     {
       id: 82,
       title: "TechEden: A Premier Tech Symposium",
-      image: "/Events/TechEden.jpg",
+      image: "/events/TechEden.jpg",
       date: "4 April",
       year: "2025",
       isPast: true,
@@ -98,7 +97,7 @@ function Events() {
     {
       id: 81,
       title: "BITS N' BREWS 5.0",
-      image: "/Events/BITS.jpg",
+      image: "/events/BITS.jpg",
       date: "11 January",
       year: "2025",
       isPast: true,
@@ -108,9 +107,8 @@ function Events() {
     {
       id: 80,
       title: "CODER'S CRUSADE",
-      image:
-        "/Events/coders_crusade.jpg",
-        date: "27 November",
+      image: "/events/coders_crusade.jpg",
+      date: "27 November",
       year: "2024",
       isPast: true,
       description:
@@ -119,8 +117,7 @@ function Events() {
     {
       id: 79,
       title: "BALLISTIC",
-      image:
-        "/Events/BALLISTIC.avif",
+      image: "/events/BALLISTIC.avif",
       date: "3 October",
       year: "2024",
       isPast: true,
@@ -130,8 +127,7 @@ function Events() {
     {
       id: 78,
       title: "WRITE IT RIGHT",
-      image:
-        "/Events/WRITE.avif",
+      image: "/events/WRITE.avif",
       date: "26 September",
       year: "2024",
       isPast: true,
@@ -141,8 +137,7 @@ function Events() {
     {
       id: 77,
       title: "FOR THE RECORD",
-      image:
-        "/Events/for_the_record.jpg",
+      image: "/events/for_the_record.jpg",
       date: "27 September",
       year: "2024",
       isPast: true,
@@ -152,8 +147,7 @@ function Events() {
     {
       id: 76,
       title: "TECH SUMMIT 3.0",
-      image:
-        "/Events/tech_summit.jpg",
+      image: "/events/tech_summit.jpg",
       date: "5 October",
       year: "2024",
       isPast: true,
@@ -163,8 +157,7 @@ function Events() {
     {
       id: 75,
       title: "BIT TO BYTE",
-      image:
-        "/Events/bit_to_byte.jpg",
+      image: "/events/bit_to_byte.jpg",
       date: "4 October",
       year: "2024",
       isPast: true,
@@ -174,8 +167,7 @@ function Events() {
     {
       id: 74,
       title: "BREACOUT 5.0",
-      image:
-        "/Events/breacout_5.jpg",
+      image: "/events/breacout_5.jpg",
       date: "5 October",
       year: "2024",
       isPast: true,
@@ -185,8 +177,7 @@ function Events() {
     {
       id: 73,
       title: "Networking Night With WIE",
-      image:
-        "/Events/networking_night.jpg",
+      image: "/events/networking_night.jpg",
       date: "6 October",
       year: "2024",
       isPast: true,
@@ -196,8 +187,7 @@ function Events() {
     {
       id: 72,
       title: "TECHEXPO",
-      image:
-        "/Events/techexpo.jpg",
+      image: "/events/techexpo.jpg",
       date: "7 October",
       year: "2024",
       isPast: true,
@@ -207,8 +197,7 @@ function Events() {
     {
       id: 71,
       title: "Pixel Forge",
-      image:
-        "/Events/pixel_forge.jpg",
+      image: "/events/pixel_forge.jpg",
       date: "3 October",
       year: "2024",
       isPast: true,
@@ -218,7 +207,7 @@ function Events() {
     {
       id: 70,
       title: "Cyber Grid",
-      image: "/Events/cybergrid.jpg",
+      image: "/events/cybergrid.jpg",
       date: "28-31 August",
       year: "2024",
       isPast: true,
@@ -228,7 +217,7 @@ function Events() {
     {
       id: 69,
       title: "BrandIT",
-      image: "/Events/brandIT.jpg",
+      image: "/events/brandIT.jpg",
       date: "3-5 August",
       year: "2024",
       isPast: true,
@@ -238,7 +227,7 @@ function Events() {
     {
       id: 68,
       title: "LeetFleet",
-      image: "/Events/leetfleet.jpg",
+      image: "/events/leetfleet.jpg",
       date: "20 july",
       year: "2024",
       isPast: true,
@@ -248,7 +237,7 @@ function Events() {
     {
       id: 67,
       title: "TechClash",
-      image: "/Events/techClash.jpg",
+      image: "/events/techClash.jpg",
       date: "28-30 june",
       year: "2024",
       isPast: true,
@@ -258,8 +247,7 @@ function Events() {
     {
       id: 66,
       title: "APOTHEOSIS",
-      image:
-        "/Events/APOTHEOSIS.jpg",
+      image: "/events/APOTHEOSIS.jpg",
       date: "12 April",
       year: "2024",
       isPast: true,
@@ -269,7 +257,7 @@ function Events() {
     {
       id: 65,
       title: "BITS N' BREWS EPISODE 2",
-      image: "/Events/bnbep2.jpg",
+      image: "/events/bnbep2.jpg",
       date: "31 March",
       year: "2024",
       isPast: true,
@@ -279,7 +267,7 @@ function Events() {
     {
       id: 64,
       title: "EMPOWHER",
-      image: "/Events/Empowher.jpg",
+      image: "/events/Empowher.jpg",
       date: "4-10 March",
       year: "2024",
       isPast: true,
@@ -289,8 +277,7 @@ function Events() {
     {
       id: 63,
       title: "FUTURE FORGE",
-      image:
-        "/Events/FUTURE_FORGE.avif",
+      image: "/events/FUTURE_FORGE.avif",
       date: "23 February",
       year: "2024",
       isPast: true,
@@ -300,8 +287,7 @@ function Events() {
     {
       id: 62,
       title: "WIENTER OF CODE",
-      image:
-        "/Events/WIENTER_OF_CODE.avif",
+      image: "/events/WIENTER_OF_CODE.avif",
       date: "13 January-2 February",
       year: "2024",
       isPast: true,
@@ -311,8 +297,7 @@ function Events() {
     {
       id: 61,
       title: "BITS N BREWS",
-      image:
-        "/Events/BITS_N_BREWS.avif",
+      image: "/events/BITS_N_BREWS.avif",
       date: "26 December",
       year: "2023",
       isPast: true,
@@ -322,8 +307,7 @@ function Events() {
     {
       id: 60,
       title: "SINCONF'23",
-      image:
-        "/Events/SINCONF.avif",
+      image: "/events/SINCONF.avif",
       date: "20 November",
       year: "2023",
       isPast: true,
@@ -333,8 +317,7 @@ function Events() {
     {
       id: 59,
       title: "Tech Trends",
-      image:
-        "/Events/Tech_Trends.avif",
+      image: "/events/Tech_Trends.avif",
       date: "31 October",
       year: "2023",
       isPast: true,
@@ -344,8 +327,7 @@ function Events() {
     {
       id: 58,
       title: "IC Hack 2.0",
-      image:
-        "/Events/IC_Hack_2.avif",
+      image: "/events/IC_Hack_2.avif",
       date: "7-8 October, 21-22 October",
       year: "2023",
       isPast: true,
@@ -355,7 +337,7 @@ function Events() {
     {
       id: 57,
       title: "Elohim",
-      image: "/Events/",
+      image: "/events/",
       date: "25 September",
       year: "2023",
       isPast: true,
@@ -365,7 +347,7 @@ function Events() {
     {
       id: 56,
       title: "Ballistic 3.0",
-      image: "/Events/ballistic_3.0.jpeg",
+      image: "/events/ballistic_3.0.jpeg",
       date: "23-24 September",
       year: "2023",
       isPast: true,
@@ -375,7 +357,7 @@ function Events() {
     {
       id: 55,
       title: "Network with WIE 2.0",
-      image: "/Events/networkwithwie2.0.jpeg",
+      image: "/events/networkwithwie2.0.jpeg",
       date: "23 September",
       year: "2023",
       isPast: true,
@@ -385,7 +367,7 @@ function Events() {
     {
       id: 54,
       title: "Tech Summit",
-      image: "/Events/techsummit01.jpeg",
+      image: "/events/techsummit01.jpeg",
       date: "23 September",
       year: "2023",
       isPast: true,
@@ -395,7 +377,7 @@ function Events() {
     {
       id: 53,
       title: "Breacout 4.0",
-      image: "/Events/breacout4.jpeg",
+      image: "/events/breacout4.jpeg",
       date: "23 September",
       year: "2023",
       isPast: true,
@@ -405,7 +387,7 @@ function Events() {
     {
       id: 52,
       title: "Lights Camera Auction",
-      image: "/Events/lca3.jpeg",
+      image: "/events/lca3.jpeg",
       date: "22-23 September",
       year: "2023",
       isPast: true,
@@ -415,7 +397,7 @@ function Events() {
     {
       id: 51,
       title: "CODE-IT-ON 2.0",
-      image: "/Events/codeiton2.0.jpeg",
+      image: "/events/codeiton2.0.jpeg",
       date: "22 September",
       year: "2023",
       isPast: true,
@@ -425,7 +407,7 @@ function Events() {
     {
       id: 50,
       title: "Digital Graffiti",
-      image: "/Events/digitalgraffiti.jpeg",
+      image: "/events/digitalgraffiti.jpeg",
       date: "20 September",
       year: "2023",
       isPast: true,
@@ -435,7 +417,7 @@ function Events() {
     {
       id: 49,
       title: "CSS Combat",
-      image: "/Events/CSSCombat.jpeg",
+      image: "/events/CSSCombat.jpeg",
       date: "4 January",
       year: "2023",
       isPast: true,
@@ -973,7 +955,7 @@ function Events() {
         }`}
       >
         {/* Front side */}
-        <div className="flip-card-front absolute inset-0 bg-black/60 rounded-2xl overflow-hidden flex items-center justify-center p-4 border border-purple-500/20">
+        <div className="flip-card-front absolute inset-0 bg-black/60 rounded-2xl overflow-hidden flex items-center justify-center p-4 pb-20 border border-purple-500/20">
           <img
             src={event.image}
             alt={event.title}
@@ -983,7 +965,7 @@ function Events() {
                 "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='400' viewBox='0 0 250 400'%3E%3Crect width='250' height='400' fill='%23374151'/%3E%3Ctext x='125' y='200' text-anchor='middle' fill='%239CA3AF' font-size='16'%3EEvent Image%3C/text%3E%3C/svg%3E";
             }}
           />
-          <div className="absolute bottom-0 w-full text-center bg-gradient-to-t from-black via-black/70 to-transparent py-4 text-purple-200">
+          <div className="absolute bottom-0 w-full text-center bg-gradient-to-t from-black via-black/70 to-transparent pt-5 pb-2 text-purple-200">
             <h3 className="font-bold bg-black/70 text-sm md:text-base px-2 py-1 rounded mx-1">
               {event.title}
             </h3>
@@ -1105,42 +1087,49 @@ function Events() {
           </div>
         )}
 
-        {/* Events Grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 lg:gap-12 justify-items-center">
-  {filteredEvents.length > 0 ? (
-    activeTab === "upcoming" ? (
-      <>
-        {/* Show EventBanner with the first upcoming event, spanning full width */}
-        <div className="col-span-full">
-          <EventBanner event={filteredEvents[0]} />
+          {filteredEvents.length > 0 ? (
+            activeTab === "upcoming" ? (
+              <>
+                
+                <div className="col-span-full">
+                  <EventBanner event={filteredEvents[0]} />
+                </div>
+
+                
+                {filteredEvents.slice(1).map((event) => (
+                  <EventCard key={event.id} event={event} />
+                ))}
+              </>
+            ) : (
+              
+              filteredEvents.map((event) => (
+                <EventCard key={event.id} event={event} />
+              ))
+            )
+          ) : activeTab === "upcoming" ? (
+            <div className="col-span-full text-center text-purple-300 py-12">
+              <Calendar className="w-12 md:w-16 h-12 md:h-16 mx-auto mb-4 opacity-50 animate-bounce" />
+              <p className="text-xl md:text-2xl font-semibold">
+                Exciting events coming soon!
+              </p>
+              <p className="text-sm mt-2">
+                Stay tuned for our next big thing 🎉
+              </p>
+            </div>
+          ) : (
+            <div className="col-span-full text-center text-purple-300 py-12">
+              <Calendar className="w-12 md:w-16 h-12 md:h-16 mx-auto mb-4 opacity-50" />
+              <p className="text-lg md:text-xl">
+                No events found for {searchYear}
+              </p>
+              <p className="text-sm mt-2">
+                Try selecting a different year or view all events
+              </p>
+            </div>
+          )}
         </div>
-
-        {/* Show EventCard for the rest of the upcoming events */}
-        {filteredEvents.slice(1).map((event) => (
-          <EventCard key={event.id} event={event} />
-        ))}
-      </>
-    ) : (
-      // For other tabs, just show EventCard for all filtered events
-      filteredEvents.map((event) => (
-        <EventCard key={event.id} event={event} />
-      ))
-    )
-  ) : activeTab === "upcoming" ? (
-    <div className="col-span-full text-center text-purple-300 py-12">
-      <Calendar className="w-12 md:w-16 h-12 md:h-16 mx-auto mb-4 opacity-50 animate-bounce" />
-      <p className="text-xl md:text-2xl font-semibold">Exciting events coming soon!</p>
-      <p className="text-sm mt-2">Stay tuned for our next big thing 🎉</p>
-    </div>
-  ) : (
-    <div className="col-span-full text-center text-purple-300 py-12">
-      <Calendar className="w-12 md:w-16 h-12 md:h-16 mx-auto mb-4 opacity-50" />
-      <p className="text-lg md:text-xl">No events found for {searchYear}</p>
-      <p className="text-sm mt-2">Try selecting a different year or view all events</p>
-    </div>
-  )}
-</div>
-
 
         {/* Event Count */}
         <div className="text-center mt-6 md:mt-8 text-purple-400 text-xs md:text-sm">

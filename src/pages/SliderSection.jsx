@@ -11,15 +11,15 @@ const images = [
     alt: 'Image 2'
   },
   {
-    src: '/e3.jpg',
+    src: '/e3.JPG',
     alt: 'Image 3'
   },
   {
-    src: '/e9.HEIC',
+    src: '/e9.jpeg',
     alt: 'Image 9'
   },
   {
-    src: '/e7.jpg',
+    src: '/e7.JPG',
     alt: 'Image 7'
   }
 ];
