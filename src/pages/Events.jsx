@@ -120,7 +120,7 @@ function Events() {
       id: 79,
       title: "BALLISTIC",
       image:
-        "/Events/BALLISTIC.jpg",
+        "/Events/BALLISTIC.avif",
       date: "3 October",
       year: "2024",
       isPast: true,
@@ -131,7 +131,7 @@ function Events() {
       id: 78,
       title: "WRITE IT RIGHT",
       image:
-        "/Events/write_it_right.jpg",
+        "/Events/WRITE.avif",
       date: "26 September",
       year: "2024",
       isPast: true,
