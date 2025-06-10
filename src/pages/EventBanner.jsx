@@ -5,7 +5,7 @@ function EventBanner({ event }) {
   return (
     <motion.div
       className="relative bg-cover bg-center rounded-3xl overflow-hidden shadow-xl mb-16"
-      style={{ backgroundImage: `url('${event.image}')` }}  
+      style={{ backgroundImage: `url('${event.image}')` }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       whileInView={{ opacity: 1 }}
@@ -15,8 +15,8 @@ function EventBanner({ event }) {
       <div className="bg-black/60 backdrop-blur-sm w-full h-full flex flex-col lg:flex-row items-center justify-between p-6 md:p-12 gap-6">
         
         <motion.img
-          src={event.image}  
-          alt={event.alt || event.title}  
+          src={event.image}
+          alt={event.alt || event.title}
           className="w-full max-w-xs rounded-xl shadow-md"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -46,7 +46,7 @@ function EventBanner({ event }) {
           </motion.p>
 
           <motion.p
-            className="text-base text-purple-200 max-w-2xl"
+            className="text-base text-purple-200 max-w-2xl mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             whileInView={{ opacity: 1 }}
@@ -54,6 +54,19 @@ function EventBanner({ event }) {
           >
             {event.description}
           </motion.p>
+
+          <motion.a
+            href="https://forms.gle/2y8sc2o6xGypDkwW8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-rose-600 hover:bg-rose-700 text-white font-semibold rounded-lg shadow transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            Register Now
+          </motion.a>
         </div>
       </div>
     </motion.div>

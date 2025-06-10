@@ -98,21 +98,21 @@ function Events() {
       id: 81,
       title: "Promptopia",
       image: "/Events/promptopia.jpg",
-      date: "11 January",
+      date: "21 February",
       year: "2025",
       isPast: true,
       description:
-        "IEEE WIE MUJ is excited to present Bits N' Brews (Ep:5)—an inspiring alumni talk featuring Ms. Kritika Rag, Software Engineer at Google and tech trailblazer.",
+        "Promptopia is a hands-on workshop designed to introduce participants to the world of prompt engineering, focusing on the art and science of crafting effective prompts for AI models.",
     },
     {
       id: 82,
       title: "VisionIAS",
       image: "/Events/visionias.jpg",
-      date: "11 January",
+      date: "25 January",
       year: "2025",
       isPast: true,
       description:
-        "IEEE WIE MUJ is excited to present Bits N' Brews (Ep:5)—an inspiring alumni talk featuring Ms. Kritika Rag, Software Engineer at Google and tech trailblazer.",
+        "An exclusive seminar by VISION IAS,where preparation aligns with expert mentorship.",
     },
     {
       id: 81,
@@ -1009,6 +1009,7 @@ function Events() {
 
   return (
     <section className="events-section eventss py-20 px-6 md:px-20 bg-gradient-to-b from-purple-900/80 via-black/70 to-purple-900/80">
+      
       <div className="container mx-auto mt-10">
         {/* Header */}
         <h2 className="text-3xl md:text-4xl font-bold text-center font-cambo text-purple-200 mb-10 relative">
@@ -1144,11 +1145,11 @@ function Events() {
         </div>
 
         {/* Event Count */}
-        <div className="text-center mt-6 md:mt-8 text-purple-400 text-xs md:text-sm">
+        {/* <div className="text-center mt-6 md:mt-8 text-purple-400 text-xs md:text-sm">
           Showing {filteredEvents.length} {activeTab} event
           {filteredEvents.length !== 1 ? "s" : ""}
           {activeTab === "past" && searchYear && ` from ${searchYear}`}
-        </div>
+        </div> */}
       </div>
 
       <style jsx>{`

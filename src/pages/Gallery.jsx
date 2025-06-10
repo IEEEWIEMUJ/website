@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const imageData = Array.from({ length: 100 }, (_, i) => ({
-  src: `/events/img${i + 1}.jpg`,
-  title: `Event ${i + 1}`,
-  description: `This is a short description about Event ${i + 1}. It was an exciting and successful experience!`,
-}))
+const imageData = [{
+  src: `/events/img1.jpg`,
+  title: `Event 1`,
+  description: `This is a short description about Event 1. It was an exciting and successful experience!`,
+},]
 
 function Gallery() {
   const [selected, setSelected] = useState(null)

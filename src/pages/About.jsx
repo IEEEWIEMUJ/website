@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
   visible: (i = 1) => ({
@@ -36,6 +37,7 @@ export default function About() {
       aria-labelledby="about-wie-title"
       className="min-h-screen bg-gradient-to-b from-purple-950 via-black to-purple-950 text-white px-6 md:px-20 py-28"
     >
+     
       <header className="text-center mb-20 max-w-3xl mx-auto">
         <motion.h2
           id="about-wie-title"
@@ -89,7 +91,7 @@ export default function About() {
         </p>
         <a
           href="#join"
-          className="inline-block bg-purple-600 hover:bg-purple-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300"
+          className="inline-block bg-rose-600 hover:bg-rose-700  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300"
         >
           Join Us
         </a>

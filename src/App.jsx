@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import AppRoutes from './routes/AppRoutes';
 import ScrollToTop from './routes/ScrollToTop';
+
 import './index.css';
 
 export default function App() {
@@ -11,8 +12,11 @@ export default function App() {
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-black text-white font-tektur">
         <Header />
+         
         <main className="flex-grow">
+          
           <AppRoutes />
+          
         </main>
         <Footer />
       </div>
