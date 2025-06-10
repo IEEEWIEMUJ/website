@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState , useMemo , useEffect } from "react";
 import { Search, Calendar, ChevronDown } from "lucide-react";
 import EventBanner from "./EventBanner";
+
 
 function Events() {
   const allEvents = [
     {
-      id: 90,
+      id: 92,
       title: "BrandIT 2.0",
       image: "/Events/brandit2.0.jpg",
       date: "18 June",
@@ -15,7 +16,7 @@ function Events() {
         "A creative competition that challenges participants to design innovative, practical projects using Arduino, pushing the boundaries of technology and hands-on development.",
     },
     {
-      id: 89,
+      id: 91,
       title: "HardWired",
       image: "/Events/hardwired.jpg",
       date: "5 April",
@@ -25,7 +26,7 @@ function Events() {
         "A creative competition that challenges participants to design innovative, practical projects using Arduino, pushing the boundaries of technology and hands-on development.",
     },
     {
-      id: 88,
+      id: 90,
       title: "Artemis: Mental Health Check-In",
       image: "/Events/artemis.jpg",
       date: "5 April",
@@ -35,7 +36,7 @@ function Events() {
         "An empowering session dedicated to mental wellness, offering tools and strategies to manage stress, build resilience, and maintain balance in today's fast-paced world.",
     },
     {
-      id: 87,
+      id: 89,
       title: "Pandora: AR/VR Workshop for Innovators",
       image: "/Events/pandora.jpg",
       date: "5 April",
@@ -45,7 +46,7 @@ function Events() {
         "Step into the immersive world of AR/VR, where participants will create and experiment with technologies reshaping industries and experiences.",
     },
     {
-      id: 86,
+      id: 88,
       title: "Binary Bloom: Web3 Development Indulgence",
       image: "/Events/binarybloom.jpg",
       date: "5 April",
@@ -55,7 +56,7 @@ function Events() {
         "Delve into blockchain and Web3, learning to create decentralized solutions that are set to transform industries and everyday life.",
     },
     {
-      id: 85,
+      id: 87,
       title: "DataPulse: Mock Quant Datathon",
       image: "/Events/datapulse.jpg",
       date: "4-5 April",
@@ -65,7 +66,7 @@ function Events() {
         "An intense, high-energy datathon where participants analyze real-world datasets, applying quantitative methods to tackle complex challenges.",
     },
     {
-      id: 84,
+      id: 86,
       title: "FutureSync: 3D Printing and Robotics Session",
       image: "/Events/futuresync.jpg",
       date: "4 April",
@@ -75,7 +76,7 @@ function Events() {
         "A hands-on workshop for 3D printing, applying creativity and problem-solving to real-world challenges.",
     },
     {
-      id: 83,
+      id: 85,
       title: "NextTech: Computing Session",
       image: "/Events/nexttech.jpg",
       date: "4 April",
@@ -85,7 +86,7 @@ function Events() {
         "Discover the future of computing with quantum technologies and photonics, and explore their power to solve today's most pressing challenges.",
     },
     {
-      id: 82,
+      id: 84,
       title: "TechEden: A Premier Tech Symposium",
       image: "/Events/techeden.jpg",
       date: "4 April",
@@ -95,7 +96,7 @@ function Events() {
         "A dynamic gathering of industry leaders and tech enthusiasts, diving into the latest trends in AI, blockchain, and cutting-edge innovations shaping tomorrow.",
     },
     {
-      id: 81,
+      id: 83,
       title: "Promptopia",
       image: "/Events/promptopia.jpg",
       date: "21 February",
@@ -938,12 +939,25 @@ function Events() {
       [id]: !prev[id],
     }));
   };
+  useEffect(() => {
+  const handleClickOutside = (e) => {
+    if (!e.target.closest(".year-dropdown")) {
+      setShowYearDropdown(false);
+    }
+  };
+  document.addEventListener("click", handleClickOutside);
+  return () => document.removeEventListener("click", handleClickOutside);
+}, []);
 
-  const pastYears = [
-    ...new Set(
-      allEvents.filter((event) => event.isPast).map((event) => event.year)
-    ),
-  ].sort((a, b) => b - a);
+
+ 
+
+const pastYears = useMemo(() => {
+  return [...new Set(
+    allEvents.filter((event) => event.isPast).map((event) => event.year)
+  )].sort((a, b) => b - a);
+}, [allEvents]);
+
 
   const getFilteredEvents = () => {
     if (activeTab === "upcoming") {
@@ -951,7 +965,8 @@ function Events() {
     } else {
       const pastEvents = allEvents.filter((event) => event.isPast);
       if (searchYear) {
-        return pastEvents.filter((event) => event.year === searchYear);
+        return pastEvents.filter((event) => `${event.year}` === `${searchYear}`);
+;
       }
       return pastEvents;
     }
@@ -961,7 +976,7 @@ function Events() {
 
   const EventCard = ({ event }) => (
     <div
-      key={event.id}
+      
       className="perspective-container cursor-pointer w-full max-w-[250px]"
       onClick={() => handleCardFlip(event.id)}
     >
@@ -1007,6 +1022,7 @@ function Events() {
     </div>
   );
 
+
   return (
     <section className="events-section eventss py-20 px-6 md:px-20 bg-gradient-to-b from-purple-900/80 via-black/70 to-purple-900/80">
       
@@ -1050,7 +1066,7 @@ function Events() {
         {/* Search Filter for Past Events */}
         {activeTab === "past" && (
           <div className="flex flex-col sm:flex-row justify-center items-center mb-8 gap-3">
-            <div className="relative">
+            <div className="relative year-dropdown">
               <button
                 onClick={() => setShowYearDropdown(!showYearDropdown)}
                 className="flex items-center space-x-2 bg-black/60 backdrop-blur-sm text-purple-200 px-4 py-2 rounded-lg border border-purple-500/30 hover:border-purple-400/50 transition-colors hover:shadow-[0_0_10px_rgba(168,85,247,0.3)] min-w-[150px] justify-center"
