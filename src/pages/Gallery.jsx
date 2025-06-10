@@ -2,10 +2,63 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const imageData = [{
-  src: `/events/img1.jpg`,
-  title: `Event 1`,
-  description: `This is a short description about Event 1. It was an exciting and successful experience!`,
-},]
+  src: `/Gallery/img1.jpg`,
+  title: `Executive Committee -2`,
+  description: `ECs 24-25`,
+}, {
+  src: `/Gallery/img2.jpg`,
+  title: `Elysium`,
+  description: `Team Elysium`,
+}, {
+  src: `/Gallery/img3.jpg`,
+  title: `Pyaare JCs`,
+  description: `JCs 24-25`,
+}, {
+  src: `/Gallery/img4.jpg`,
+  title: `Elyisium in the Hostel`,
+  description: `Elysium 4 the win`,
+}, {
+  src: `/Gallery/img5.jpg`,
+  title: `EC reel shoot`,
+  description: `The team for EC reel 24-25`,
+}, {
+  src: `/Gallery/img6.jpg`,
+  title: `CCs in HardWired`,
+  description: `CCs on Top`,
+}, {
+  src: `/Gallery/img7.jpg`,
+  title: `Gyaan`,
+  description: `Shashwat bhaiya giving Gyaan`,
+}, {
+  src: `/Gallery/img8.jpg`,
+  title: `ATL Lab`,
+  description: `JC masti in ATL Lab`,
+}, {
+  src: `/Gallery/img9.jpg`,
+  title: `Shopping Cart`,
+  description: `Shrishti in a cart`,
+}, {
+  src: `/Gallery/img11.jpg`,
+  title: `DataPulse pitching`,
+  description: `Serious stuff`,
+}, {
+  src: `/Gallery/img10.jpg`,
+  title: `Bhai Log`,
+  description: `Muscles and Masti`,
+}, {
+  src: `/Gallery/img12.jpg`,
+  title: `Jcs in Audi`,
+  description: `Fun in silence`,
+},
+ {
+  src: `/Gallery/img13.jpg`,
+  title: `Bullying Ishani`,
+  description: `Haww Kashish`,
+}, {
+  src: `/Gallery/img14.jpg`,
+  title: `CnC Team`,
+  description: `Corp and Cur`,
+}, ]
 
 function Gallery() {
   const [selected, setSelected] = useState(null)
