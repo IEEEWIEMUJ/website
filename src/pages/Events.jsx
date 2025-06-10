@@ -13,7 +13,7 @@ function Events() {
       year: "2025",
       isPast: false,
       description:
-        "A creative competition that challenges participants to design innovative, practical projects using Arduino, pushing the boundaries of technology and hands-on development.",
+        "Where design meets dev, and brands are born. BrandIt is a dynamic and engaging event. Participants will develop unique brand ideas into websites. ",
     },
     {
       id: 91,
