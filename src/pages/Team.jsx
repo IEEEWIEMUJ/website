@@ -26,8 +26,8 @@ const executiveCommittee = [
     name: "Ishani Arora",
     designation: "Human Resource Director",
     img: "/Team//hrd.jpg",
-    instagram: "https://www.instagram.com/ishaniiaroraa?igsh=MTM3YnRtbXRyZzRpaQ%3D%3D&utm_source=qr",
-    linkedin: "https://www.linkedin.com/in/ishani-arora-990959273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    instagram: "https://www.instagram.com/ishaniiaroraa?igsh=N3M4aGxwbXJuZWI1",
+    linkedin: "https://www.linkedin.com/in/ishani-arora-990959273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
 
   },
   {
@@ -45,6 +45,7 @@ const executiveCommittee = [
     img: "/Team//gensec.jpg",
     instagram: "https://www.instagram.com/tqnishk.hehe/",
     linkedin: "https://www.linkedin.com/in/tanishk-mittal-b42719289/",
+    github: "https://github.com/Tanishk109",
   },
   {
     id: 6,

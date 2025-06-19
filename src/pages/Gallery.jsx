@@ -36,7 +36,7 @@ const imageData = [{
 }, {
   src: `/Gallery/img9.jpg`,
   title: `Shopping Cart`,
-  description: `Shrishti in a cart`,
+  description: `Srishti in a cart`,
 }, {
   src: `/Gallery/img11.jpg`,
   title: `DataPulse pitching`,
@@ -58,7 +58,12 @@ const imageData = [{
   src: `/Gallery/img14.jpg`,
   title: `CnC Team`,
   description: `Corp and Cur`,
-},  ]
+},{
+  src: `/Gallery/img15.jpg`,
+  title: `Genesis`,
+  description: `CC Summit Times`,
+},
+  ]
 
 function Gallery() {
   const [selected, setSelected] = useState(null)

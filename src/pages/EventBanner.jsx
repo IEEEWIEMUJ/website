@@ -56,7 +56,7 @@ function EventBanner({ event }) {
           </motion.p>
 
           <motion.a
-            href="https://forms.gle/2y8sc2o6xGypDkwW8"
+            // href="https://forms.gle/2y8sc2o6xGypDkwW8"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-rose-600 hover:bg-rose-700 text-white font-semibold rounded-lg shadow transition-all duration-300"
@@ -65,7 +65,7 @@ function EventBanner({ event }) {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            Register Now
+            Registrations Closed
           </motion.a>
         </div>
       </div>
