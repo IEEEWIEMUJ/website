@@ -9,17 +9,16 @@ const executiveCommittee = [
     name: "Kashish Kumar",
     designation: "Chairperson",
     img: "/Team/chair.jpg",
-    instagram: "https://instagram.com/ananta",
-    linkedin: "https://linkedin.com/in/ananta",
-    github: "https://github.com/ananta",
+    instagram: "https://www.instagram.com/kashish._kumar_?igsh=MWEzZTQ3dnN4emVtNw%3D%3D&utm_source=qr",
+    linkedin: "http://linkedin.com/in/kashish-kumar-527ba72b3",
   },
   {
     id: 2,
     name: "Guneet Pahwa",
     designation: "Vice-Chairperson",
     img: "/Team//vice.jpg",
-    instagram: "https://instagram.com/saumya",
-    linkedin: "https://linkedin.com/in/saumya",
+    instagram: "https://www.instagram.com/guneet_7_?igsh=MXM5emYzMTNhczZkMA==",
+    linkedin: "https://www.linkedin.com/in/guneet-pahwa-350063264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     github: "https://github.com/saumya",
   },
   {
@@ -27,35 +26,33 @@ const executiveCommittee = [
     name: "Ishani Arora",
     designation: "Human Resource Director",
     img: "/Team//hrd.jpg",
-    instagram: "https://instagram.com/shivangi",
-    linkedin: "https://linkedin.com/in/shivangi",
-    github: "https://github.com/shivangi",
+    instagram: "https://www.instagram.com/ishaniiaroraa?igsh=MTM3YnRtbXRyZzRpaQ%3D%3D&utm_source=qr",
+    linkedin: "https://www.linkedin.com/in/ishani-arora-990959273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+
   },
   {
     id: 4,
     name: "Shambhavi Sharma",
     designation: "Managing Director",
     img: "/Team//md.jpg",
-    instagram: "https://instagram.com/gouri",
-    linkedin: "https://linkedin.com/in/gouri",
-    github: "https://github.com/gouri",
+    instagram: "https://www.instagram.com/shambhavi_0914?igsh=MXIycWE5ZjJubmowMw==",
+    linkedin: "https://www.linkedin.com/in/shambhavi-sharma-855032312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 5,
     name: "Tanishk Mittal",
     designation: "General Secretary",
     img: "/Team//gensec.jpg",
-    instagram: "https://instagram.com/shashwat",
-    linkedin: "https://linkedin.com/in/shashwat",
-    github: "https://github.com/shashwat",
+    instagram: "https://www.instagram.com/tqnishk.hehe/",
+    linkedin: "https://www.linkedin.com/in/tanishk-mittal-b42719289/",
   },
   {
     id: 6,
     name: "Akshit Gupta",
     designation: "Treasurer",
     img: "/Team//tres.jpg",
-    instagram: "https://instagram.com/devishi",
-    linkedin: "https://linkedin.com/in/devishi",
+    instagram: "https://www.instagram.com/akshitgupta05?igsh=bXV3OWk3MHc5ZWg3",
+    linkedin: "https://www.linkedin.com/in/akshit-gupta-7a10962b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 7,
@@ -126,7 +123,7 @@ const TeamCard = ({ member }) => {
       <img
         src={img}
         alt={name}
-        className="w-full h-64 object-cover rounded-2xl border border-purple-500 mb-4 transition-transform group-hover:scale-105"
+        className="w-full h-80 object-cover rounded-2xl border border-purple-500 mb-4 transition-transform group-hover:scale-105"
       />
       <h3 className="text-xl font-semibold text-purple-100 mb-1 text-center">
         {name}
