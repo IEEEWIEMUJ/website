@@ -58,7 +58,7 @@ const imageData = [{
   src: `/Gallery/img14.jpg`,
   title: `CnC Team`,
   description: `Corp and Cur`,
-}, ]
+},  ]
 
 function Gallery() {
   const [selected, setSelected] = useState(null)

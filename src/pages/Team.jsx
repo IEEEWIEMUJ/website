@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const executiveCommittee = [
   {
     id: 1,
-    name: "Ananta Taneja",
+    name: "Kashish Kumar",
     designation: "Chairperson",
     img: "/Team/chair.jpg",
     instagram: "https://instagram.com/ananta",
@@ -15,7 +15,7 @@ const executiveCommittee = [
   },
   {
     id: 2,
-    name: "Saumya Gupta",
+    name: "Guneet Pahwa",
     designation: "Vice-Chairperson",
     img: "/Team//vice.jpg",
     instagram: "https://instagram.com/saumya",
@@ -24,7 +24,7 @@ const executiveCommittee = [
   },
   {
     id: 3,
-    name: "Shivangi Singh",
+    name: "Ishani Arora",
     designation: "Human Resource Director",
     img: "/Team//hrd.jpg",
     instagram: "https://instagram.com/shivangi",
@@ -33,7 +33,7 @@ const executiveCommittee = [
   },
   {
     id: 4,
-    name: "Gouri Sharma",
+    name: "Shambhavi Sharma",
     designation: "Managing Director",
     img: "/Team//md.jpg",
     instagram: "https://instagram.com/gouri",
@@ -42,7 +42,7 @@ const executiveCommittee = [
   },
   {
     id: 5,
-    name: "Shashwat Singh",
+    name: "Tanishk Mittal",
     designation: "General Secretary",
     img: "/Team//gensec.jpg",
     instagram: "https://instagram.com/shashwat",
@@ -51,7 +51,7 @@ const executiveCommittee = [
   },
   {
     id: 6,
-    name: "Devishi Mahajan",
+    name: "Akshit Gupta",
     designation: "Treasurer",
     img: "/Team//tres.jpg",
     instagram: "https://instagram.com/devishi",
@@ -59,12 +59,12 @@ const executiveCommittee = [
   },
   {
     id: 7,
-    name: "Aaranay Aadi",
+    name: "Aarav",
     designation: "Technical Secretary",
     img: "/Team//techsec.jpg",
     instagram: "https://instagram.com/aaranay",
     linkedin: "https://linkedin.com/in/aaranay",
-    github: "https://github.com/aaranay",
+    github: "https://github.com/AaroAarav",
   },
 ];
 
