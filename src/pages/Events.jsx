@@ -6,12 +6,22 @@ import EventBanner from "./EventBanner";
 function Events() {
   const allEvents = [
     {
+      id: 93,
+      title: "Cyber Arena",
+      image: "/Events/cyberarena.jpg",
+      date: "30 June - 2 July",
+      year: "2025",
+      isPast: false,
+      description:
+        "International event based on cybersecurity, where participants will compete in various challenges related to cybersecurity..",
+    },
+    {
       id: 92,
       title: "BrandIT 2.0",
       image: "/Events/brandit2.0.jpg",
       date: "18 June",
       year: "2025",
-      isPast: false,
+      isPast: true,
       description:
         "Where design meets dev, and brands are born. BrandIt is a dynamic and engaging event. Participants will develop unique brand ideas into websites. ",
     },

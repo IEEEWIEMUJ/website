@@ -1,28 +1,13 @@
 import React, { useRef } from 'react';
 import '../index.css'; 
 
-const images = [
-  {
-    src: '/e1.jpg',
-    alt: 'Image 1'
-  },
-  {
-    src: '/e2.jpg',
-    alt: 'Image 2'
-  },
-  {
-    src: '/e3.JPG',
-    alt: 'Image 3'
-  },
-  {
-    src: '/e9.jpeg',
-    alt: 'Image 9'
-  },
-  {
-    src: '/e7.JPG',
-    alt: 'Image 7'
-  }
-];
+const images = Array.from({ length: 5 }, () => {
+  const x = Math.floor(Math.random() * 19) + 1; 
+  return {
+    src: `/Gallery/img${x}.jpg`,
+    alt: `Image ${x}`
+  };
+});
 
 const SliderSection = () => {
   const slideRef = useRef();
