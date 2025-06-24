@@ -1,7 +1,8 @@
 [build]
   command = "npm run build"
-  publish = "build" # or dist
-  node_version = "18"
+  publish = "build"
 
-[functions]
-  directory = "netlify/functions"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
