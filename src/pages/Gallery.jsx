@@ -62,6 +62,46 @@ const imageData = [{
   src: `/Gallery/img15.jpg`,
   title: `Genesis`,
   description: `CC Summit Times`,
+},{
+  src: `/Gallery/img16.jpg`,
+  title: ``,
+  description: ``,
+},{
+  src: `/Gallery/img17.jpg`,
+  title: `DataPulse Judging`,
+  description: `Elysium Day 2`,
+},{
+  src: `/Gallery/img18.jpg`,
+  title: `Hardwired`,
+  description: `Elysium Day 2`,
+},{
+  src: `/Gallery/img19.jpg`,
+  title: `NextTech`,
+  description: `Elysium Day 1`,
+},{
+  src: `/Gallery/img20.jpg`,
+  title: `Tech Eden`,
+  description: `Speakers at Tech Eden`,
+},{
+  src: `/Gallery/img21.jpg`,
+  title: `Genesis`,
+  description: `Elysium Day 2`,
+},{
+  src: `/Gallery/img22.jpg`,
+  title: `Elysium`,
+  description: `ATL Lab`,
+},{
+  src: `/Gallery/img23.jpg`,
+  title: `Reeti Riwaaz`,
+  description: `Group photo`,
+},{
+  src: `/Gallery/img24.jpg`,
+  title: `Reeti Riwaaz`,
+  description: `JCs in Reeti Riwaaz`,
+},{
+  src: `/Gallery/img25.jpg`,
+  title: `Reeti Riwaaz`,
+  description: `Dashing Team JC`,
 },
   ]
 

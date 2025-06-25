@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import '../index.css'; 
 
 const images = Array.from({ length: 5 }, () => {
-  const x = Math.floor(Math.random() * 19) + 1; 
+  const x = Math.floor(Math.random() * 24) + 1; 
   return {
     src: `/Gallery/img${x}.jpg`,
     alt: `Image ${x}`
