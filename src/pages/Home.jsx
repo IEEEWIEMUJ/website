@@ -283,6 +283,14 @@ export default function Home() {
           </h2>
           <SliderSection />
         </div>
+        <div className="text-center mt-12">
+          <Link
+            to="/gallery"
+            className="inline-block px-6 py-3 text-purple-200 border border-purple-500 hover:bg-purple-800 hover:text-white rounded-xl transition-all"
+          >
+            Go to Gallery
+          </Link>
+        </div>
       </section>
     </div>
   );
