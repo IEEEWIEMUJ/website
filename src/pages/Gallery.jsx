@@ -64,8 +64,8 @@ const imageData = [{
   description: `CC Summit Times`,
 },{
   src: `/Gallery/img16.jpg`,
-  title: ``,
-  description: ``,
+  title: `Shridhar sir`,
+  description: `I LOVE MANIPAL`,
 },{
   src: `/Gallery/img17.jpg`,
   title: `DataPulse Judging`,
@@ -84,7 +84,7 @@ const imageData = [{
   description: `Speakers at Tech Eden`,
 },{
   src: `/Gallery/img21.jpg`,
-  title: `Genesis`,
+  title: `Group photo`,
   description: `Elysium Day 2`,
 },{
   src: `/Gallery/img22.jpg`,
