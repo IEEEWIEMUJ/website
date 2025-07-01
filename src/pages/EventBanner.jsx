@@ -59,13 +59,13 @@ function EventBanner({ event }) {
             href="https://forms.gle/KNJxXi1Ehj95UdaR8"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-rose-600 hover:bg-rose-700 text-white font-semibold rounded-lg shadow transition-all duration-300"
+            className="inline-block px-6 py-3 bg-rose-700 hover:bg-rose-700 text-white font-semibold rounded-lg shadow transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            Register Now
+            Registeration closed
           </motion.a>
         </div>
       </div>
