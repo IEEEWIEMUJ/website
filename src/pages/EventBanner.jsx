@@ -56,7 +56,7 @@ function EventBanner({ event }) {
           </motion.p>
 
           <motion.a
-            href="https://forms.gle/KNJxXi1Ehj95UdaR8"
+            href="https://forms.gle/JzsRm7bmudgFVxmm6"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-rose-700 hover:bg-rose-700 text-white font-semibold rounded-lg shadow transition-all duration-300"

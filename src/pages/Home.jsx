@@ -15,6 +15,14 @@ export default function Home() {
   const blogData = [
     {
       id: 1,
+      title: "Control + Alt + Curiosity",
+      author: "Ashita Saxena",
+      imageUrl: "/blog4.jpg",
+      readMoreUrl:
+        "https://medium.com/@ieee.wiemuj/control-alt-curiosity-why-every-student-should-explore-beyond-the-syllabus-4891ec6b7313",
+    },
+    {
+      id: 2,
       title: "Stepping Into the 5G Era: Speed, Innovation & What Lies Ahead",
       author: "Ashita Saxena",
       imageUrl: "/blog1.jpg",
@@ -22,31 +30,34 @@ export default function Home() {
         "https://medium.com/@ieee.wiemuj/the-transformative-impact-of-5g-on-communication-and-industry-a4839be39911",
     },
     {
-      id: 2,
+      id: 3,
       title: "Dorm Cleanout? Don’t Trash Your Tech—Here’s Why",
       author: "Chinmayee Khanna",
       imageUrl: "/blog2.jpg",
       readMoreUrl:
         "https://medium.com/@ieee.wiemuj/dorm-room-cleanout-dont-trash-your-tech-3354fb277fbd",
     },
-    {
-      id: 3,
-      title: "The AI Revolution: Will Developers Become Obsolete?",
-      author: "Prisha Nasa",
-      imageUrl: "/blog3.jpg",
-      readMoreUrl:
-        "https://medium.com/@ieee.wiemuj/can-ai-replace-software-developers-the-future-of-code-in-an-ai-driven-world-c45199e4774b",
-    },
+    
   ];
 
   const eventData = [
+    {
+      id: 93,
+      title: "Cyber Arena",
+      image: "/Events/cyberarena.jpg",
+      date: "30 June - 2 July",
+      year: "2025",
+      isPast: true,
+      description:
+        "International event based on cybersecurity, where participants will compete in various challenges related to cybersecurity..",
+    },
     {
       id: 92,
       title: "BrandIT 2.0",
       image: "/Events/brandit2.0.jpg",
       date: "18 June",
       year: "2025",
-      isPast: false,
+      isPast: true,
       description:
         "Where design meets dev, and brands are born. BrandIt is a dynamic and engaging event. Participants will develop unique brand ideas into websites. ",
     },
@@ -59,17 +70,7 @@ export default function Home() {
       isPast: true,
       description:
         "A creative competition that challenges participants to design innovative, practical projects using Arduino, pushing the boundaries of technology and hands-on development.",
-    },
-    {
-      id: 90,
-      title: "Artemis: Mental Health Check-In",
-      image: "/Events/artemis.jpg",
-      date: "5 April",
-      year: "2025",
-      isPast: true,
-      description:
-        "An empowering session dedicated to mental wellness, offering tools and strategies to manage stress, build resilience, and maintain balance in today's fast-paced world.",
-    },
+    }
   ];
 
   useEffect(() => {
