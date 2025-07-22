@@ -6,12 +6,22 @@ import EventBanner from "./EventBanner";
 function Events() {
   const allEvents = [
     {
+      id: 94,
+      title: "Bits n Brews 6.0",
+      image: "/Events/bnb6.jpg",
+      date: "19 July",
+      year: "2025",
+      isPast: false,
+      description:
+        "Bits n Brews 6.0 – Alumni Talk Series | Sip on stories that inspire as Aishwary Shree (Ex-ISRO SAC, Ex-EY, PwC India, Master of IT @ University of Melbourne) shares real talk and raw experiences",
+    },
+    {
       id: 93,
       title: "Cyber Arena",
       image: "/Events/cyberarena.jpg",
       date: "30 June - 2 July",
       year: "2025",
-      isPast: false,
+      isPast: true,
       description:
         "International event based on cybersecurity, where participants will compete in various challenges related to cybersecurity..",
     },
