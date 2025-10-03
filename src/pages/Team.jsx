@@ -2,6 +2,58 @@ import React from "react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+
+//Faculty
+
+const Faculty = [
+  {
+    id: 1,
+    name: "Dr. Mahesh Jangid",
+    designation: "Branch Counselor (IEEE MUJ)",
+    img: "/Team/faculty/mahesh.avif",
+    instagram: "https://www.instagram.com/mahesh_seelak",
+    linkedin: "",
+  },
+  {
+    id: 2,
+    name: "Dr Sunita Singhal",
+    designation: "Faculty Coordinator,(IEEE WIE)",
+    img: "/Team/faculty/sunita.avif",
+    instagram: "",
+    linkedin: "",
+  },
+  {
+    id: 3,
+    name: "Ms. Juhi Singh",
+    designation: "Faculty Advisory (IEEE WIE)",
+    img: "/Team/faculty/juhi.avif",
+    instagram: "",
+    linkedin: "",
+  },
+  {
+    id: 4,
+    name: "Dr. Rishav Dubey",
+    designation: "Faculty Advisory,(IEEE WIE)",
+    img: "/Team/faculty/rishav.jpg",
+    instagram: "",
+    linkedin: "",
+  },
+  
+]
+//Advisory
+
+const Advisory = [
+  {
+    id: 1,
+    name: "Ananta Taneja",
+    designation: "Advisory, IEEE WIE MUJ",
+    img: "/Team/faculty/ananta.avif",
+    instagram: "https://www.instagram.com/at_1920_28?igsh=OGQ5ZDc2ODk2ZA%3D%3D",
+    linkedin: "https://www.linkedin.com/in/ananta-t-690431211/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  }
+  
+]
+
 // Executive Committee Data
 const executiveCommittee = [
   {
@@ -152,7 +204,7 @@ const coreCommittee = [
     id: 40,
     name: "Sarath Mohanraj ",
     designation: "Senior Coordinator logistics ",
-    img: "/Team/sarathmohanraj.jpg",
+    img: "/Team/sarathmohanraj1.jpg",
     instagram: "https://www.instagram.com/sarathmohanraj?igsh=MTRva3d5cGtjaGhhNg==",
     linkedin:"https://www.linkedin.com/in/sarath-mohanraj-55aa74335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     github:"",
@@ -629,13 +681,65 @@ export default function Team() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-950 via-black to-purple-950 text-white py-24 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        {/* Executive Heading */}
+
+        {/* Faculty Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-bold text-center text-purple-100 mb-16"
+        >
+          Faculty
+        </motion.h2>
+
+        {/* Faculty Cards */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-10"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {Faculty.map((member) => (
+            <TeamCard key={member.id} member={member} />
+          ))}
+        </motion.div>
+
+
+          {/* Advisory Heading */}
+          <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-bold text-center text-purple-100 mt-28 mb-16"
+        >
+          Advisory
+        </motion.h2>
+
+        {/* Advisory Cards */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-10"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {Advisory.map((member) => (
+            <TeamCard key={member.id} member={member} />
+          ))}
+        </motion.div>
+
+
+
+        {/* Executive Heading */}
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-bold text-center text-purple-100 mt-28 mb-16"
         >
           Executive Committee
         </motion.h2>

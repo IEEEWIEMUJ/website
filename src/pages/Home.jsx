@@ -15,6 +15,14 @@ export default function Home() {
   const blogData = [
     {
       id: 1,
+      title: "🌍 From Dreams to Departure: Your Complete Roadmap to a Master’s Abroad 🎓",
+      author: "Chinmayee Khanna",
+      imageUrl: "/blog5.jpg",
+      readMoreUrl:
+        "https://medium.com/@ieee.wiemuj/from-dreams-to-departure-your-complete-roadmap-to-a-masters-abroad-9a7b1f7d3eb1",
+    },
+    {
+      id: 2,
       title: "Control + Alt + Curiosity",
       author: "Ashita Saxena",
       imageUrl: "/blog4.jpg",
@@ -22,22 +30,13 @@ export default function Home() {
         "https://medium.com/@ieee.wiemuj/control-alt-curiosity-why-every-student-should-explore-beyond-the-syllabus-4891ec6b7313",
     },
     {
-      id: 2,
+      id: 3,
       title: "Stepping Into the 5G Era: Speed, Innovation & What Lies Ahead",
       author: "Ashita Saxena",
       imageUrl: "/blog1.jpg",
       readMoreUrl:
         "https://medium.com/@ieee.wiemuj/the-transformative-impact-of-5g-on-communication-and-industry-a4839be39911",
-    },
-    {
-      id: 3,
-      title: "Dorm Cleanout? Don’t Trash Your Tech—Here’s Why",
-      author: "Chinmayee Khanna",
-      imageUrl: "/blog2.jpg",
-      readMoreUrl:
-        "https://medium.com/@ieee.wiemuj/dorm-room-cleanout-dont-trash-your-tech-3354fb277fbd",
-    },
-    
+    }
   ];
 
   const eventData = [
