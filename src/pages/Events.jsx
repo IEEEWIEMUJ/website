@@ -6,12 +6,112 @@ import EventBanner from "./EventBanner";
 function Events() {
   const allEvents = [
     {
+      id: 104,
+      title: "Crown Conquest",
+      image: "/Events/crownconquest.jpeg",
+      date: "13 March",
+      year: "2026",
+      isPast: false,
+      description:
+        "A competitive team-based brain game where participants solve challenges to claim and defend a crown, facing rival teams in a dynamic battle of strategy and intelligence.",
+    },
+    {
+      id: 103,
+      title: "HerVerdict",
+      image: "/Events/herverdict.jpeg",
+      date: "11 February",
+      year: "2026",
+      isPast: true,
+      description:
+        "A courtroom-style debate event where participants argue on fun and relatable topics like mess food, hostel vs day scholar, and tech vs cultural fest. With women holding the gavel, expect bold arguments, objections, and dramatic moments.",
+    },
+    {
+      id: 102,
+      title: "VisionIAS Career Guidance Session",
+      image: "/Events/visionias2.jpeg",
+      date: "11 February",
+      year: "2026",
+      isPast: true,
+      description:
+        "A mentorship session offering personalized career guidance, insights into UPSC and government careers, discounts on VisionIAS courses, and access to premium resources.",
+    },
+    {
+      id: 101,
+      title: "The Deal Room | ELYSIUM 2.0",
+      image: "/Events/dealroom.jpeg",
+      date: "11 February",
+      year: "2026",
+      isPast: true,
+      description:
+        "A Shark Tank-style startup pitching event where participants present ideas, face expert questioning, and get opportunities for incubation, patent support, and funding.",
+    },
+    {
+      id: 100,
+      title: "SWARA: Echoes of Indian Classical Heritage",
+      image: "/Events/swara.jpeg",
+      date: "10 February",
+      year: "2026",
+      isPast: true,
+      description:
+        "A cultural evening featuring Kathak dancer Mrs. Prerana Shrimali from the Jaipur Gharana, showcasing the journey of women through dance. Includes a special cinematic act by Cinefilia blending storytelling and visual drama.",
+    },
+    {
+      id: 99,
+      title: "The Confluence | ELYSIUM 2.0",
+      image: "/Events/confluence.jpeg",
+      date: "10 February",
+      year: "2026",
+      isPast: true,
+      description:
+        "A tech and corporate guidance session by Raghav Garg covering real-world applications, industry insights, and bridging the gap between theoretical knowledge and practical skills.",
+    },
+    {
+      id: 98,
+      title: "Promptopia 2.0",
+      image: "/Events/promptopia2.jpeg",
+      date: "31 January",
+      year: "2026",
+      isPast: true,
+      description:
+        "An AI-focused event exploring prompt engineering, generative AI tools, and creative problem-solving challenges with a prize pool of up to ₹4K.",
+    },
+    {
+      id: 97,
+      title: "WIEnter of Code",
+      image: "/Events/wienterofcode.jpeg",
+      date: "26–31 December",
+      year: "2025",
+      isPast: true,
+      description:
+        "An online project-based coding event focusing on frontend, backend, databases, machine learning, and research. Offers mentorship, beginner-friendly resources, and certificates to help build real-world projects.",
+    },
+    {
+      id: 96,
+      title: "Bits n Brews 7.0 – Alumni Talk Series",
+      image: "/Events/bnb7.jpeg",
+      date: "24 October",
+      year: "2025",
+      isPast: true,
+      description:
+        "the 7th edition of Bits n Brews as we sit down with our alumna Khushi Garg, Software Developer at JPMorgan Chase and a passionate tech enthusiast whose journey reflects curiosity, perseverance, and innovation.",
+    },
+    {
+      id: 95,
+      title: "The Circle of Deception: Where Logic Meets Lies!",
+      image: "/Events/deception.jpeg",
+      date: "9 October",
+      year: "2025",
+      isPast: true,
+      description:
+        "The Circle of Deception is a psychological train. Your tech knowledge gets you a seat at the table, but final victory is reserved for the master of pure deception. Get ready for mind games!",
+    },
+    {
       id: 94,
       title: "Bits n Brews 6.0",
       image: "/Events/bnb6.jpg",
       date: "19 July",
       year: "2025",
-      isPast: false,
+      isPast: true,
       description:
         "Bits n Brews 6.0 – Alumni Talk Series | Sip on stories that inspire as Aishwary Shree (Ex-ISRO SAC, Ex-EY, PwC India, Master of IT @ University of Melbourne) shares real talk and raw experiences",
     },

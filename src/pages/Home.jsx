@@ -14,62 +14,62 @@ export default function Home() {
 
   const blogData = [
     {
-      id: 1,
-      title: "🌍 From Dreams to Departure: Your Complete Roadmap to a Master’s Abroad 🎓",
+      id: 3,
+      title: "🌱 Data Cleaning Techniques Every Analyst Should Know 📊",
       author: "Chinmayee Khanna",
-      imageUrl: "/blog5.jpg",
+      imageUrl: "/blog11.jpeg",
       readMoreUrl:
-        "https://medium.com/@ieee.wiemuj/from-dreams-to-departure-your-complete-roadmap-to-a-masters-abroad-9a7b1f7d3eb1",
+        "https://medium.com/@ieee.wiemuj/data-cleaning-techniques-every-analyst-should-know-0a9ab0adbb50",
     },
     {
       id: 2,
-      title: "Control + Alt + Curiosity",
+      title: "🌟 What Happens When Systems Fail-And Humans Take Over 🌟",
       author: "Ashita Saxena",
-      imageUrl: "/blog4.jpg",
+      imageUrl: "/blog10.jpeg",
       readMoreUrl:
-        "https://medium.com/@ieee.wiemuj/control-alt-curiosity-why-every-student-should-explore-beyond-the-syllabus-4891ec6b7313",
+        "https://medium.com/@ieee.wiemuj/what-happens-when-systems-fail-and-humans-take-over-8120ed4c2ae5",
     },
     {
-      id: 3,
-      title: "Stepping Into the 5G Era: Speed, Innovation & What Lies Ahead",
-      author: "Ashita Saxena",
-      imageUrl: "/blog1.jpg",
+      id: 1,
+      title: "🌐 Exploring the Metaverse: Your Guide to the Virtual Universe ✨",
+      author: "Shreya Singh",
+      imageUrl: "/blog9.jpeg",
       readMoreUrl:
-        "https://medium.com/@ieee.wiemuj/the-transformative-impact-of-5g-on-communication-and-industry-a4839be39911",
-    }
+        "https://medium.com/@ieee.wiemuj/exploring-the-metaverse-your-guide-to-the-virtual-universe-5dace13f5716",
+    },
   ];
 
   const eventData = [
     {
-      id: 93,
-      title: "Cyber Arena",
-      image: "/Events/cyberarena.jpg",
-      date: "30 June - 2 July",
-      year: "2025",
-      isPast: true,
+      id: 104,
+      title: "Crown Conquest",
+      image: "/Events/crownconquest.jpeg",
+      date: "13 March",
+      year: "2026",
+      isPast: false,
       description:
-        "International event based on cybersecurity, where participants will compete in various challenges related to cybersecurity..",
+        "A competitive team-based brain game where participants solve challenges to claim and defend a crown, facing rival teams in a dynamic battle of strategy and intelligence.",
     },
     {
-      id: 92,
-      title: "BrandIT 2.0",
-      image: "/Events/brandit2.0.jpg",
-      date: "18 June",
-      year: "2025",
+      id: 103,
+      title: "HerVerdict",
+      image: "/Events/herverdict.jpeg",
+      date: "11 February",
+      year: "2026",
       isPast: true,
       description:
-        "Where design meets dev, and brands are born. BrandIt is a dynamic and engaging event. Participants will develop unique brand ideas into websites. ",
+        "A courtroom-style debate event where participants argue on fun and relatable topics like mess food, hostel vs day scholar, and tech vs cultural fest. With women holding the gavel, expect bold arguments, objections, and dramatic moments.",
     },
     {
-      id: 91,
-      title: "HardWired",
-      image: "/Events/hardwired.jpg",
-      date: "5 April",
-      year: "2025",
+      id: 102,
+      title: "VisionIAS Career Guidance Session",
+      image: "/Events/visionias2.jpeg",
+      date: "11 February",
+      year: "2026",
       isPast: true,
       description:
-        "A creative competition that challenges participants to design innovative, practical projects using Arduino, pushing the boundaries of technology and hands-on development.",
-    }
+        "A mentorship session offering personalized career guidance, insights into UPSC and government careers, discounts on VisionIAS courses, and access to premium resources.",
+    },
   ];
 
   useEffect(() => {
