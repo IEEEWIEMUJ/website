@@ -13,6 +13,8 @@ export default function Header() {
     { path: "/team", label: "Our Team" },
     { path: "/about", label: "About Us" },
     { path: "/gallery", label: "Gallery" },
+    { path: "/blog", label: "Blog" },
+    
   ];
 
   useEffect(() => {
